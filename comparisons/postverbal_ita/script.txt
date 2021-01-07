@@ -1,0 +1,133 @@
+#python3 -i __init__.py
+
+#matrix SVO
+mytree = tree_from_file('trees/postverbal_ita/main_SVO')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/main_SVO')
+
+#print annotated tree
+my_tree = tree_from_file('./trees/postverbal_ita/main_SVO')
+texprint(my_tree, filename='main_SVO_annotated', tree_directory='.trees/postverbal_ita/')
+
+#matrix VOS
+mytree = tree_from_file('trees/postverbal_ita/main_VOS')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/main_VOS')
+
+#print annotated tree
+my_tree = tree_from_file('./trees/postverbal_ita/main_VOS')
+texprint(my_tree, filename='main_VOS_annotated', tree_directory='.trees/postverbal_ita/')
+
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/postverbal_ita/ITA_postverbal_matrix', directory='./trees/postverbal_ita', metrics=my_metrics)
+
+#RC
+#RC OS
+mytree = tree_from_file('trees/postverbal_ita/rc/rc_OS')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/rc/rc_OS')
+
+
+#RC OO
+mytree = tree_from_file('trees/postverbal_ita/rc/rc_OO')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/rc/rc_OO')
+
+#RC OOp
+mytree = tree_from_file('trees/postverbal_ita/rc/rc_OOp')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/rc/rc_OOp')
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/postverbal_ita/ITA_postverbal_rc', directory='./trees/postverbal_ita/rc', metrics=my_metrics)
+
+# WH
+#WH Word Prev Subj
+mytree = tree_from_file('trees/postverbal_ita/wh/whW_subjPre')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/wh/whW_subjPre')
+
+#WH Phrase Prev Subj
+mytree = tree_from_file('trees/postverbal_ita/wh/whP_subjPre')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/wh/whP_subjPre')
+
+#WH Word Post Subj
+mytree = tree_from_file('trees/postverbal_ita/wh/whW_subjPost')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/wh/whW_subjPost')
+
+#WH Phrase Prev Subj
+mytree = tree_from_file('trees/postverbal_ita/wh/whP_subjPost')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/wh/whP_subjPost')
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/postverbal_ita/ITA_postverbal_wh', directory='./trees/postverbal_ita/wh', metrics=my_metrics)
+
+###UNERGATIVES
+mytree = tree_from_file('trees/postverbal_ita/unaccVSunerg/main_unerg')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/unaccVSunerg/main_unerg')
+
+#print annotated tree
+my_tree = tree_from_file('./trees/postverbal_ita/unaccVSunerg/main_unerg')
+texprint(my_tree, filename='main_unerg_annotated', tree_directory='.trees/postverbal_ita/unaccVSunerg/')
+
+
+###UNACCUSATIVEs
+mytree = tree_from_file('trees/postverbal_ita/unaccVSunerg/main_unacc')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/unaccVSunerg/main_unacc')
+
+#print annotated tree
+my_tree = tree_from_file('./trees/postverbal_ita/unaccVSunerg/main_unacc')
+texprint(my_tree, filename='main_unacc_annotated', tree_directory='.trees/postverbal_ita/unaccVSunerg/')
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/postverbal_ita/ITA_postverbal_UnergUnacc.compare', directory='./trees/postverbal_ita//unaccVSunerg', metrics=my_metrics)
+
+
+%%%%%%%%%
+#RC OS
+mytree = tree_from_file('trees/postverbal_ita/rc_subject/rc_SS')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/rc_subject/rc_SS')
+
+
+#RC OO
+mytree = tree_from_file('trees/postverbal_ita/rc_subject/rc_SO')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/rc_subject/rc_SO')
+
+#RC OOp
+mytree = tree_from_file('trees/postverbal_ita/rc_subject/rc_SOp')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/rc_subject/rc_SOp')
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/postverbal_ita/ITA_postverbal_rc_subj', directory='./trees/postverbal_ita/rc_subject', metrics=my_metrics)
+
+
+%%%%%%%%%%
+
+%Printing annotations
+>>> my_tree = tree_from_file('./trees/postverbal_ita/rc/rc_OS.tree.forest')
+>>> texprint(my_tree, filename='rc_ITA_OS', tree_directory='./trees/')
+>>> my_tree = tree_from_file('./trees/postverbal_ita/rc/rc_OO.tree.forest')
+>>> texprint(my_tree, filename='rc_ITA_OO', tree_directory='./trees/')
+>>> my_tree = tree_from_file('./trees/postverbal_ita/rc/rc_OOp.tree.forest')
+>>> texprint(my_tree, filename='rc_ITA_OOp', tree_directory='./trees/')
+
+
+%%%comp.show()
+%%%comp.show()
+
+
+>>> my_tree = tree_from_file('./trees/postverbal_ita/rc_subject/rc_SS.tree.forest')
+>>> texprint(my_tree, filename='rc_ITA_SS', tree_directory='./trees/')
+>>> my_tree = tree_from_file('./trees/postverbal_ita/rc_subject/rc_SO.tree.forest')
+>>> texprint(my_tree, filename='rc_ITA_SO', tree_directory='./trees/')
+>>> my_tree = tree_from_file('./trees/postverbal_ita/rc_subject/rc_SOp.tree.forest')
+>>> texprint(my_tree, filename='rc_ITA_SOp', tree_directory='./trees/')

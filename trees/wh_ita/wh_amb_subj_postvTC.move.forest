@@ -1,0 +1,3 @@
+\draw[move = {chiamatoT1}] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {chiamatoC1}] (call)      .. controls +(120:6em) and +(220:4em) .. (C1);
+\draw[move = {whotoCP}] (who)      .. controls +(120:6em) and +(220:4em) .. (CP);

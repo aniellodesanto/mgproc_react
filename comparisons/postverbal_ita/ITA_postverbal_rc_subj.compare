@@ -1,0 +1,10 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+#SS vs SO
+ita-postverbal-rc-SS-SO;  ; rc_SS ; rc_SO ; 
+#SS vs SOp
+ita-postverbal-rc-SS-SOp;  ; rc_SS ; rc_SOp ; 
+#SO vs SOp
+ita-postverbal-rc-SO-SOp;  ; rc_SO ; rc_SOp ; 

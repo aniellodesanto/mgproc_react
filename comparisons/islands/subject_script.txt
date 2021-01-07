@@ -1,0 +1,71 @@
+python3 -i __init__.py
+#
+#
+mytree = tree_from_file('trees/islands/subject/shortNOI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject/shortNOI')
+texprint(mytree, filename='shortNOI_annotated', tree_directory='./trees/islands/subject/')
+
+mytree = tree_from_file('trees/islands/subject/shortYESI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject/shortYESI')
+texprint(mytree, filename='shortYESI_annotated', tree_directory='./trees/islands/subject/')
+
+mytree = tree_from_file('trees/islands/subject/longNOI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject/longNOI')
+texprint(mytree, filename='longNOI_annotated', tree_directory='./trees/islands/subject/')
+
+
+mytree = tree_from_file('trees/islands/subject/longYESI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject/longYESI')
+texprint(mytree, filename='longYESI_annotated', tree_directory='./trees/islands/subject/')
+
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/islands/wh_subject', directory='./trees/islands/subject/', metrics=my_metrics)
+
+# Check
+comp.show()
+comp.table()
+
+
+#####SUBJ ISLANDS WITH OBJ SUBJ CONTRAST
+
+mytree = tree_from_file('trees/islands/subject2/subjNOI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject2/subjNOI')
+texprint(mytree, filename='subjNOI_annotated', tree_directory='./trees/islands/subject2/')
+
+mytree = tree_from_file('trees/islands/subject2/subjYESI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject2/subjYESI')
+texprint(mytree, filename='subjYESI_annotated', tree_directory='./trees/islands/subject2/')
+
+mytree = tree_from_file('trees/islands/subject2/objNOI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject2/objNOI')
+texprint(mytree, filename='objNOI_annotated', tree_directory='./trees/islands/subject2/')
+
+
+mytree = tree_from_file('trees/islands/subject2/objYESI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/subject2/objYESI')
+texprint(mytree, filename='objYESI_annotated', tree_directory='./trees/islands/subject2/')
+
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/islands/wh_subject2', directory='./trees/islands/subject2/', metrics=my_metrics)
+
+# Check
+comp.show()
+comp.table()
+
+
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/islands/wh_subject1', directory='./trees/islands/subject1/', metrics=my_metrics)

@@ -1,0 +1,103 @@
+\node[index]            at (MTP)                      {1};
+\node[outdex]           at (MTP)                      {2};
+%
+\node[index]            at (t1)                       {2};
+\node[outdex]           at (t1)                       {3};
+%
+\node[index]            at (t11)                      {3};
+\node[outdex, boxed]    at (t11)                      {6};
+%
+\node[index]            at (t12)                      {3};
+\node[outdex]           at (t12)                      {4};
+%
+\node[index]            at (Msub)                     {4};
+\node[outdex]           at (Msub)                     {5};
+%
+\node[index]            at (Mv')                      {4};
+\node[outdex, boxed]    at (Mv')                      {7};
+%
+\node[index]            at (t1221)                    {7};
+\node[outdex]           at (t1221)                    {8};
+%
+\node[index]            at (t12211)                   {8};
+\node[outdex]           at (t12211)                   {9};
+%
+\node[index]            at (t122111)                  {9};
+\node[outdex]           at (t122111)                 {10};
+%
+\node[index]            at (t122112)                  {9};
+\node[outdex]           at (t122112)                 {11};
+%
+\node[index]            at (t1221121)                {11};
+\node[outdex]           at (t1221121)                {12};
+%
+\node[index]            at (KP)                      {11};
+\node[outdex]           at (KP)                      {13};
+%
+\node[index]            at (t12211221)               {13};
+\node[outdex]           at (t12211221)               {14};
+%
+\node[index]            at (t122112211)              {14};
+\node[outdex, boxed]    at (t122112211)              {17};
+%
+\node[index]            at (RelH)                    {14};
+\node[outdex]           at (RelH)                    {15};
+%
+\node[index]            at (Relsub)                  {15};
+\node[outdex]           at (Relsub)                  {16};
+%
+\node[index]            at (t1221122122)             {15};
+\node[outdex, boxed]    at (t1221122122)             {18};
+%
+\node[index]            at (t12211221221)            {18};
+\node[outdex]           at (t12211221221)            {19};
+%
+\node[index]            at (t12211221222)            {18};
+\node[outdex]           at (t12211221222)            {20};
+%
+\node[index]            at (t122112212221)           {20};
+\node[outdex]           at (t122112212221)           {21};
+%
+\node[index]            at (t122112212222)           {20};
+\node[outdex]           at (t122112212222)           {22};
+%
+\node[index]            at (t1221122122221)          {22};
+\node[outdex]           at (t1221122122221)          {23};
+%
+\node[index]            at (ETP)                     {22};
+\node[outdex]           at (ETP)                     {24};
+%
+\node[index]            at (t12211221222221)         {24};
+\node[outdex]           at (t12211221222221)         {25};
+%
+\node[index]            at (t122112212222211)        {25};
+\node[outdex, boxed]    at (t122112212222211)        {28};
+%
+\node[index]            at (t122112212222212)        {25};
+\node[outdex]           at (t122112212222212)        {26};
+%
+\node[index]            at (Prosub)                  {26};
+\node[outdex]           at (Prosub)                  {27};
+%
+\node[index]            at (Ev')                     {26};
+\node[outdex, boxed]    at (Ev')                     {29};
+%
+\node[index]            at (t12211221222221221)      {29};
+\node[outdex]           at (t12211221222221221)      {30};
+%
+\node[index]            at (t122112212222212211)     {30};
+\node[outdex]           at (t122112212222212211)     {31};
+%
+\node[index]            at (t1221122122222122111)    {31};
+\node[outdex]           at (t1221122122222122111)    {32};
+%
+\node[index]            at (t1221122122222122112)    {31};
+\node[outdex]           at (t1221122122222122112)    {33};
+%
+\node[index]            at (EV)                      {30};
+\node[outdex, boxed]    at (EV)                      {34};
+%
+\node[index]            at (MV)                       {8};
+\node[outdex, boxed]    at (MV)                      {35};
+%
+%

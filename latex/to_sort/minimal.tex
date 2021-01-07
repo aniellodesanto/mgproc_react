@@ -1,0 +1,821 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+\begin{document}
+
+%old RC
+%\begin{forest}
+%[CP, name=CPh
+%    [C, empty]
+%    [TP, name=TPh
+%        [T$'$, name=T1h
+%            [$v$P
+%                [pro, empty, name=proh]
+%                    [$v'$
+%                        [$v$, empty]
+%                        [VP
+%                            [vedo, name=see]
+%                            [DP
+%                            	[il]
+%				[CP, name = CP
+%					[C$'$, name=C1
+%						[che]
+%						[TP, name=TP
+%							[T$'$, name=T1
+%								[$v$P
+%								[DP, name=DPlion
+%										[il]
+%										[leone]
+%									]
+%								[$v'$
+%									[$v$]
+%									[VP
+%									[insegue, name=chase]
+%									[cavallo, name=horse]
+%									]
+%								]
+%								]
+%							]
+%						]
+%					]
+%				]%
+%                            ]
+%                        ]
+%                    ]
+%                ]
+%            ]
+%        ]
+%    ]
+%%
+%\draw[move = {seetoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+%\draw[move = {protoTP}] (proh)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+%%
+%\draw[move = {liontoTP}] (DPlion)      .. controls +(120:6em) and +(220:4em) .. (TP);
+%\draw[move = {chasetoT1}] (chase)      .. controls +(120:6em) and +(220:4em) .. (T1);
+%\draw[move = {horsetoCP}] (horse)      .. controls +(120:6em) and +(220:4em) .. (CP);
+%\end{forest}
+
+%matrix clause SVO
+\begin{forest}
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+        [T$'$, name=T1
+	   [PerfP,
+	   [ha, name=ha]
+            [$v$P
+            [pro,empty,name=pro]
+                         [$v'$
+                        [$v$, empty]
+                        [VP
+                            [chiamato, name=call]
+                            [Gio, name=Gio]
+                        ]
+                    ]
+                 ]
+                ]
+                ]
+                ]
+            ]
+        ]
+    ]
+]
+%
+\draw[move = {hatoT}] (ha)      .. controls +(180:6em) and +(220:4em) .. (T1);
+\draw[move = {protoTP}] (pro)      .. controls +(180:6em) and +(220:4em) .. (TP);
+\end{forest}
+
+%matrix clause VOS
+\begin{forest}
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+    	[pro, name=pro, empty]
+        [T$'$, name=T1
+	   [PerfP,
+	   [ha, name=ha]
+	   [TopP, name=TopP
+	   [Top$'$, name=Top
+	   [Top, empty]
+	   [FocP, name=FocP
+	   [Fop$'$, name=Fop
+	   [Foc, empty]
+            [$v$P,name=vP
+            [Gio,name=DPs]
+                    [$v'$
+                        [$v$, empty]
+                        [chiamato]
+                    ]
+                ]
+                ]
+                ]
+                ]
+                ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {StoFoc}] (DPs)      .. controls +(180:6em) and +(220:4em) .. (FocP);
+\draw[move = {vPtoTop}] (vP)      .. controls +(180:6em) and +(220:4em) .. (TopP);
+\draw[move = {hatoT}] (ha)      .. controls +(180:6em) and +(220:4em) .. (T1);
+\end{forest}
+
+
+%UNACCUSATIVE
+\begin{forest}
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+    	[pro,empty]
+        [T$'$, name=T1
+	   [PerfP,
+	   [e, name=e]
+                         [$v$P
+                        [$v$, empty]
+                        [VP
+                            [arrivato, name=call]
+                            [Gio, name=Gio]
+                    ]
+                ]
+                ]
+                ]
+            ]
+        ]
+    ]
+]
+%
+\draw[move = {etoT}] (e)      .. controls +(180:6em) and +(220:4em) .. (T1);
+%\draw[move = {StoTP}] (Gio)      .. controls +(180:6em) and +(220:4em) .. (TP);
+\end{forest}
+
+%%UNACCUSATIVE WITH RAISING PRO
+%\begin{forest}
+%[CP, name=CP
+%    [C, name=C]
+%    [TP, name=TP
+%        [T$'$, name=T1
+%	   [PerfP,
+%	   [e, name=e]
+%                         [$v$P
+%                         [pro,empty, name=pro]
+%                         [v$'$,
+%                        [$v$, empty]
+%                        [VP
+%                            [arrivato, name=call]
+%                            [Gio, name=Gio]
+%                    ]
+%                    ]
+%                ]
+%                ]
+%                ]
+%            ]
+%        ]
+%    ]
+%]
+%%
+%\draw[move = {etoT}] (e)      .. controls +(180:6em) and +(220:4em) .. (T1);
+%\draw[move = {protoTP}] (pro)      .. controls +(180:6em) and +(220:4em) .. (TP);
+%\end{forest}
+
+%%UNACCUSATIVE with FOCUS analysis
+\begin{forest}
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+    	[pro, name=pro, empty]
+        [T$'$, name=T1
+        	   [PerfP,
+	   [e, name=e]
+	   [TopP, name=TopP
+	   [Top$'$, name=Top
+	   [Top, empty]
+	   [FocP, name=FocP
+	   [Fop$'$, name=Fop
+	   [Foc, empty]
+                         [$v$P, name= vP
+                        [$v$, empty]
+                        [VP
+                            [arrivato, name=call]
+                            [Gio, name=Gio]
+                    ]
+                ]
+                ]
+                ]
+                ]
+                ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {etoT}] (e)      .. controls +(180:6em) and +(220:4em) .. (T1);
+\draw[move = {StoFoc}] (Gio)      .. controls +(180:6em) and +(220:4em) .. (FocP);
+\draw[move = {vPtoTop}] (vP)      .. controls +(180:6em) and +(220:4em) .. (TopP);
+\end{forest}
+
+%%UNERGATIVE
+\begin{forest}
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+    	[pro, name=pro, empty]
+        [T$'$, name=T1
+        	   [PerfP,
+	   [ha, name=ha]
+	   [TopP, name=TopP
+	   [Top$'$, name=Top
+	   [Top, empty]
+	   [FocP, name=FocP
+	   [Fop$'$, name=Fop
+	   [Foc, empty]
+            [$v$P,name=vP
+            [Gio,name=DPs]
+                    [$v'$
+                        [$v$, empty]
+                        [corso]
+                    ]
+                ]
+                ]
+                ]
+                ]
+                ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {hatoT}] (ha)      .. controls +(180:6em) and +(220:4em) .. (T1);
+\draw[move = {StoFoc}] (DPs)      .. controls +(180:6em) and +(220:4em) .. (FocP);
+\draw[move = {vPtoTop}] (vP)      .. controls +(180:6em) and +(220:4em) .. (TopP);
+\end{forest}
+
+
+%RC (OS)
+\begin{forest}
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+            [$v$P
+                [pro, empty, name=proh]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [vedo, name=see]
+                            [DP
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[$v$P
+								[DP, name=DPrel
+								[D]
+								[cavallo, name=horse]
+								]								
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPlion
+										[il]
+										[leone]
+									]
+									]
+								]
+							]
+								]
+							]
+						]
+					]
+				]%
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+%
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+%\draw[move = {horsetoTP},non-final] (horse)      .. controls +(120:6em) and +(220:4em) .. (TP);
+\draw[move = {horsetoTP},non-final] (DPrel)      .. controls +(120:6em) and +(220:4em) .. (TP);
+%\draw[move = {horsetoTP}] (horse)      .. controls +(120:6em) and +(220:4em) .. (TP);
+%\draw[move = {horsetoCP}] (TP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:6em) and +(220:4em) .. (CP);
+%
+\draw[move = {seetoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+\draw[move = {protoTP}] (proh)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\end{forest}
+
+
+%RC OO
+\begin{forest}
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+            [$v$P
+                [pro, empty, name=proh]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [vedo, name=see]
+                            [DP
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[$v$P
+								[DP, name=DPlion
+										[il]
+										[leone]
+									]
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPrel
+									[D]
+									[cavallo, name=horse]
+									]
+									]
+								]
+								]
+							]
+							]
+						]
+					]
+				]%
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    %
+    \draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+    \draw[move = {seetoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+\draw[move = {protoTP}] (proh)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\draw[move = {liontoTP}] (DPlion)      .. controls +(120:6em) and +(220:4em) .. (TP);
+%\draw[move = {horsetoCP}] (horse)      .. controls +(220:8em) and +(220:4em) .. (CP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:8em) and +(220:4em) .. (CP);
+%
+\end{forest}
+
+%RC OOpostverbal
+
+\begin{forest}
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+            [$v$P
+                [pro, empty, name=proh]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [vedo, name=see]
+                            [DP
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[pro, empty]
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[TopP, name = TopP
+								[Top$'$, name=Top
+								[Top, empty]
+								[FocP, name = FocP
+								[Foc$'$, name=Foc
+								[Foc, empty]
+								[$v$P, name =vP
+								[DP, name=DPlion
+										[il]
+										[leone]
+									]
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPrel
+									[D]
+									[cavallo, name=horse]
+									]
+									]
+								]
+								]
+								]
+								]
+								]
+								]
+								]
+							]
+						]
+					]
+				]%
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    %
+     \draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {liontoFoc}] (DPlion)      .. controls +(120:6em) and +(220:4em) .. (FocP);
+\draw[move = {vPtoTop}] (vP)      .. controls +(220:6em) and +(220:4em) .. (TopP);
+%\draw[move = {horsetoCP}] (TopP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:6em) and +(220:4em) .. (CP);
+%
+\draw[move = {seetoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+\draw[move = {protoTP}] (proh)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\end{forest}
+
+%wh  - word prev subj
+
+\begin{forest}
+[CP, name=CP
+    [C$'$, name=C1
+    [TP, name=TP
+        [T$'$, name=T1
+            [$v$P
+                [Chi, name=DP]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [chiama, name=call]
+                            [Gio, name=Gio]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {chiamatoT1}, non-final] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {chiamatoC1}] (T1)      .. controls +(120:6em) and +(220:4em) .. (C1);
+\draw[move = {DPtoTP},non-final] (DP)      .. controls +(220:6em) and +(220:4em) .. (TP);
+\draw[move = {DPtoCP}] (TP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\end{forest}
+
+
+%%%Non DLINKED base generated in S
+%\begin{forest}
+%[CP, name=CP
+%    [C$'$, name=C1
+%    [TP, name=TP
+%        [T$'$, name=T1
+%            [$v$P
+%                [Chi, name=DP]
+%                    [$v'$
+%                        [$v$, empty]
+%                        [VP
+%                            [chiama, name=call]
+%                            [Gio, name=Gio]
+%                        ]
+%                    ]
+%                ]
+%            ]
+%        ]
+%    ]
+%]
+%\draw[move = {chiamatoT1}, non-final] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+%\draw[move = {chiamatoC1}] (T1)      .. controls +(120:6em) and +(220:4em) .. (C1);
+%\draw[move = {DPtoTP},non-final] (DP)      .. controls +(220:6em) and +(220:4em) .. (TP);
+%\draw[move = {DPtoCP}] (TP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+%\end{forest}
+
+
+%wh  - phrase prev subj
+
+\begin{forest}
+[CP, name=CP
+    [C$'$, name=C1
+    [TP, name=TP
+        [T$'$, name=T1
+            [$v$P
+                [DP, name=DP
+                		[quale, name=which]
+			[ragazzo, name=boy]
+		]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [chiama, name=call]
+                            [Gio, name=Gio]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {chiamatoT1}, non-final] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {chiamatoC1}] (T1)      .. controls +(120:6em) and +(220:4em) .. (C1);
+\draw[move = {DPtoTP},non-final] (DP)      .. controls +(220:6em) and +(220:4em) .. (TP);
+\draw[move = {DPtoCP}] (TP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\end{forest}
+
+
+
+%wh-word post subj
+
+\begin{forest}
+[CP, name=CP
+    [C$'$, name=C1
+    [TP, name=TP
+    	[pro,empty]
+        [T$'$, name=T1
+        [TopP, name=TopP
+           [Top$'$, name=Top
+       	    [Top, empty]
+            [$v$P
+                [Gio, name=Gio]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [chiama, name=call]
+                            [Chi, name=DP]
+                        ]
+                    ]
+                    ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {chiamatoT1}, non-final] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {chiamatoC1}] (T1)      .. controls +(120:6em) and +(220:4em) .. (C1);
+\draw[move = {GiotoTopP}] (Gio)      .. controls +(220:6em) and +(220:4em) .. (TopP);
+\draw[move = {DPtoCP}] (DP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\end{forest}
+
+
+%wh-phrase post subj
+
+\begin{forest}
+[CP, name=CP
+    [C$'$, name=C1
+    [TP, name=TP
+    	[pro,empty]
+        [T$'$, name=T1
+        [TopP, name=TopP
+           [Top$'$, name=Top
+       	    [Top, empty]
+            [$v$P
+                [Gio, name=Gio]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [chiama, name=call]
+                                            [DP, name=DP
+                		[quale, name=which]
+			[ragazzo, name=boy]
+		]
+                        ]
+                    ]
+                    ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[move = {chiamatoT1}, non-final] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {chiamatoC1}] (T1)      .. controls +(120:6em) and +(220:4em) .. (C1);
+\draw[move = {GiotoTopP}] (Gio)      .. controls +(220:6em) and +(220:4em) .. (TopP);
+\draw[move = {DPtoCP}] (DP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\end{forest}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%left embedding
+%RC (SS)
+\begin{forest}
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+        [$v$P
+ [DP, name=DPSubj
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[$v$P
+								[DP, name=DPrel
+								[D]
+								[cavallo, name=horse]
+								]								
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPlion
+										[il]
+										[leone]
+									]
+									]
+								]
+							]
+								]
+							]
+						]
+					]
+				]%
+                            ]
+                       [$v'$
+									[$v$]
+									[VP
+									[salta, name=jump]
+									[DP, name=DPfence
+										[la]
+										[siepe]
+									]
+									]
+                       ]
+                     ]
+                         ]
+                        ]
+                        ]
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {horsetoTP},non-final] (DPrel)      .. controls +(120:6em) and +(220:4em) .. (TP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:6em) and +(220:4em) .. (CP);
+%%
+\draw[move = {jumptoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+%
+\draw[move = {RELtoTP}] (DPSubj)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\end{forest}
+
+%RC SO
+
+\begin{forest}
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+        [$v$P
+                            [DP
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[$v$P
+								[DP, name=DPlion
+										[il]
+										[leone]
+									]
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPrel
+									[D]
+									[cavallo, name=horse]
+									]
+									]
+								]
+								]
+							]
+							]
+						]
+					]
+				]%
+                            ]                       [$v'$
+									[$v$]
+									[VP
+									[salta, name=jump]
+									[DP, name=DPfence
+										[la]
+										[siepe]
+									]
+									]
+                       ]
+                     ]
+                         ]
+                        ]
+                        ]
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {liontoTP}] (DPlion)      .. controls +(120:6em) and +(220:4em) .. (TP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:8em) and +(220:4em) .. (CP);
+%%
+\draw[move = {jumptoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+%
+\draw[move = {RELtoTP}] (DPSubj)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\end{forest}
+
+%RC SOp
+\begin{forest}
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+        [$v$P
+                            [DP
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[pro, empty]
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[TopP, name = TopP
+								[Top$'$, name=Top
+								[Top, empty]
+								[FocP, name = FocP
+								[Foc$'$, name=Foc
+								[Foc, empty]
+								[$v$P, name =vP
+								[DP, name=DPlion
+										[il]
+										[leone]
+									]
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPrel
+									[D]
+									[cavallo, name=horse]
+									]
+									]
+								]
+								]
+								]
+								]
+								]
+								]
+								]
+							]
+						]
+					]
+				]%
+                            ]
+                                                   [$v'$
+									[$v$]
+									[VP
+									[salta, name=jump]
+									[DP, name=DPfence
+										[la]
+										[siepe]
+									]
+									]
+                       ]
+                     ]
+                         ]
+                        ]
+                        ]
+     \draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {liontoFoc}] (DPlion)      .. controls +(120:6em) and +(220:4em) .. (FocP);
+\draw[move = {vPtoTop}] (vP)      .. controls +(220:6em) and +(220:4em) .. (TopP);
+%\draw[move = {horsetoCP}] (TopP)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:6em) and +(220:4em) .. (CP);
+%%
+\draw[move = {jumptoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+%
+\draw[move = {RELtoTP}] (DPSubj)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\end{forest}
+
+
+
+
+
+\end{document}

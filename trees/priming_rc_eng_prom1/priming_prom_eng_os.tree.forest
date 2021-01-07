@@ -1,0 +1,84 @@
+[CP
+    [C, empty]
+    [TP, name=TPmatrix
+        [T$'$
+            [T, empty]
+            [$v$P
+            [ConjP,name=coord
+               [DP, name=DP1
+                    [the]
+                    [NP, name=RC1target
+                        [N$'$
+                            [who]
+                            [TP, name=TP1
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=DP1subj
+                                            [the]
+                                            [senator]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [attacked]
+                                                [DP, name=RC1source
+                                                    [D, empty]
+                                                    [reporter]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                [Conj$'$,
+                [and]
+                [DP, name=DP2
+                    [the]
+                    [NP, name=RC2target
+                        [N$'$
+                            [who]
+                            [TP, name=TP2
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=RC2source
+                                            [D,empty]
+                                            [reporter]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [attacked]
+                                                [DP
+                                                    [the]
+                                                    [senator]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                ]
+                ]
+                [$v'$
+                    [$v$, empty]
+                    [VP
+                        [admitted]
+                        [DP
+                            [the]
+                            [error]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+

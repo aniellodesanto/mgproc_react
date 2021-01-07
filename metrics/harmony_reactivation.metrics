@@ -1,0 +1,75 @@
+# General format:
+# name; LaTeX command; load_type; operator; trivial; filter; function
+#
+#
+# tenure based, trivial memory load is ignored
+#
+MaxT ;    ; tenure; safemax
+SumT ;    ; tenure; sum
+AvgT ;    ; tenure; avg
+
+# tenure based, trivial memory load is not ignored
+#
+MaxT' ;   ; tenure; safemax; trivial
+SumT' ;   ; tenure; sum    ; trivial
+AvgT' ;    ; tenure; avg ; trivial
+#
+#
+# size based, trivial memory load is ignored
+#
+MaxS  ;   ; size  ; safemax
+SumS  ;   ; size  ; sum
+#
+#
+# size based, trivial memory load is not ignored
+#
+MaxS'  ;  ; size  ; safemax; trivial
+SumS'  ;  ; size  ; sum    ; trivial
+Movers';  ; size  ; len    ; trivial
+AvgS'  ;  ; size  ; avg    ; trivial
+MaxSsort' ;  ; size  ; sorted ; trivial
+#
+# reactivation based, reactivation_plain,  trivial is ignored
+#
+#MaxRP  ;   ; reactP  ; safemax
+#SumRP  ;   ; reactP  ; sum
+#AvgRP  ;   ; reactP  ; avg
+#MaxRPsort;  ; reactP  ; sorted 
+#
+# reactivation based, reactivation_plain, trivial is not ignored
+#
+#MaxRP'  ;   ; reactP  ; safemax; trivial
+#SumRP'  ;   ; reactP  ; sum; trivial
+#AvgRP'  ;   ; reactP  ; avg; trivial
+#MaxRPsort';  ; reactP  ; sorted ; trivial
+#
+# reactivation based, reactivation_extract, trivial is ignored
+#
+#MaxR  ;   ; react  ; safemax
+#SumR  ;   ; react  ; sum
+#AvgR  ;   ; react  ; avg
+#MaxRsort;  ; react  ; sorted 
+#
+# reactivation based, trivial is not ignored
+#
+#MaxR'  ;   ; react  ; safemax; trivial
+#SumR'  ;   ; react  ; sum; trivial
+#AvgR'  ;   ; react  ; avg; trivial
+#MaxRsort';  ; react  ; sorted; trivial 
+#
+#
+# reactivation based, boostT_extract, trivial is ignored
+#
+#MaxBT  ;   ; boostT  ; safemax
+#SumBT  ;   ; boostT  ; sum
+#AvgBT  ;   ; boostT  ; avg
+#MaxBTsort;  ; boostT  ; sorted 
+#
+# reactivation based, trivial is not ignored
+#
+#MaxBT'  ;   ; boostT  ; safemax; trivial
+#SumBT'  ;   ; boostT  ; sum; trivial
+#AvgBT'  ;   ; boostT  ; avg; trivial
+#MaxBYsort';  ; boostT  ; sorted; trivial 
+#
+#

@@ -1,0 +1,1 @@
+\draw[move = {etoT1}] (e)      .. controls +(120:6em) and +(220:4em) .. (T1);

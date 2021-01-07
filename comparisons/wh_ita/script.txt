@@ -1,0 +1,72 @@
+#python3 -i __init__.py
+
+#matrix SVO
+mytree = tree_from_file('trees/postverbal_ita/main_SVO')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/main_SVO')
+
+#matrix VOS
+mytree = tree_from_file('trees/postverbal_ita/main_VOS')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/postverbal_ita/main_VOS')
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/postverbal_ita/ITA_postverbal_matrix', directory='./trees/postverbal_ita', metrics=my_metrics)
+
+
+######################
+mytree = tree_from_file('trees/wh_ita/wh_amb_subj_prev')
+mytree = tree_from_file('trees/wh_ita/wh_amb_obj_prev')
+
+mytree = tree_from_file('trees/rc_wh/chn_orc_wh')
+mytree = tree_from_file('trees/rc_wh/wh_amb_subj_prev')
+
+
+comp = comparisons_from_file('./comparisons/wh_ita/ITA_SO_WH', directory='./trees/wh_ita', metrics=my_metrics)
+
+#####postv
+mytree = tree_from_file('trees/wh_ita/wh_amb_subj_postv')
+mytree.show_leaves()
+mytree = tree_from_file('trees/wh_ita/wh_amb_subj_postv')
+ioprint(mytree, filename='wh_amb_subj_postv')
+
+
+mytree = tree_from_file('trees/wh_ita/wh_amb_subj_postv')
+mytree.show_leaves()
+mytree = tree_from_file('trees/wh_ita/wh_amb_obj_postv')
+ioprint(mytree, filename='wh_amb_obj_postv')
+
+comp = comparisons_from_file('./comparisons/wh_ita/ITA_SO_WH', directory='./trees/wh_ita', metrics=my_metrics)
+
+#####wh phrase
+mytree = tree_from_file('trees/wh_ita/wh_phrases/whP_amb_subj_prev')
+mytree.show_leaves()
+mytree = tree_from_file('trees/wh_ita/wh_phrases/whP_amb_subj_prev')
+ioprint(mytree, filename='whP_amb_subj_prev')
+
+mytree = tree_from_file('trees/wh_ita/wh_phrases/whP_amb_obj_prev')
+mytree.show_leaves()
+ioprint(mytree, filename='whP_amb_obj_prev')
+
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/wh_ita/ITA_SO_WHP', directory='./trees/wh_ita', metrics=my_metrics)
+
+
+mytree = tree_from_file('trees/wh_ita/wh_phrases/whP_amb_obj_postv')
+mytree.show_leaves()
+mytree = tree_from_file('trees/wh_ita/wh_phrases/whP_amb_obj_postv')
+ioprint(mytree, filename='whP_amb_obj_postv')
+
+
+mytree = tree_from_file('trees/whP_amb_obj_postvTC')
+
+mytree = tree_from_file('trees/rc_ita/unambiguous/rc_amb_obj_prev')
+
+
+ioprint(mytree, filename='trees/rc_ita/rc_amb_obj_postv')
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/rc_ita/ITA_SO_RC', directory='./trees/rc_ita', metrics=my_metrics)
+
+

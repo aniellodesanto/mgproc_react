@@ -1,0 +1,244 @@
+#matrix clause SVO vs VOS
+
+| Metric   | Filters   | ita-postverbal-matrix   |
+|----------+-----------+-------------------------|
+| AvgS     |           | Tie                     |
+| AvgS'    |           | Tie                     |
+| AvgT     |           | Yes                     |
+| AvgT'    |           | Yes                     |
+| BoxT     |           | Yes                     |
+| BoxT'    |           | Yes                     |
+| MaxS     |           | Yes                     |
+| MaxS'    |           | Yes                     |
+| MaxSR    |           | Yes                     |
+| MaxSR'   |           | Yes                     |
+| MaxT     |           | Yes                     |
+| MaxT'    |           | Yes                     |
+| MaxTR    |           | Yes                     |
+| MaxTR'   |           | Yes                     |
+| Movers   |           | Yes                     |
+| Movers'  |           | Yes                     |
+| SumS     |           | Yes                     |
+| SumS'    |           | Yes                     |
+| SumT     |           | Yes                     |
+| SumT'    |           | Yes                     |
+
+
+#UnAcc vs UnErgatives
+
+| Metric   | Filters   | ita-postverbal-UnAccUnErg   |
+|----------+-----------+-----------------------------|
+| AvgS     |           | Yes                         |
+| AvgS'    |           | Yes                         |
+| AvgT     |           | Yes                         |
+| AvgT'    |           | Yes                         |
+| BoxT     |           | Yes                         |
+| BoxT'    |           | Yes                         |
+| MaxS     |           | Yes                         |
+| MaxS'    |           | Yes                         |
+| MaxSR    |           | Yes                         |
+| MaxSR'   |           | Yes                         |
+| MaxT     |           | Yes                         |
+| MaxT'    |           | Yes                         |
+| MaxTR    |           | Yes                         |
+| MaxTR'   |           | Yes                         |
+| Movers   |           | Yes                         |
+| Movers'  |           | Yes                         |
+| SumS     |           | Yes                         |
+| SumS'    |           | Yes                         |
+| SumT     |           | Yes                         |
+| SumT'    |           | Yes                         |
+
+#RC OS vs OO vs OOp
+
+| Metric   | Filters   | ita-postverbal-rc-OS-OO   | ita-postverbal-rc-OS-OOp   | ita-postverbal-rc-OO-OOp   |
+|----------+-----------+---------------------------+----------------------------+----------------------------|
+| AvgS     |           | Yes                       | Yes                        | No                         |
+| AvgS'    |           | Yes                       | Yes                        | No                         |
+| AvgT     |           | Yes                       | Yes                        | Yes                        |
+| AvgT'    |           | Yes                       | Yes                        | Yes                        |
+| BoxT     |           | Yes                       | Yes                        | Yes                        |
+| BoxT'    |           | Tie                       | Yes                        | Yes                        |
+| MaxS     |           | Yes                       | Tie                        | No                         |
+| MaxS'    |           | Yes                       | Tie                        | No                         |
+| MaxSR    |           | Yes                       | Yes                        | No                         |
+| MaxSR'   |           | Yes                       | Yes                        | No                         |
+| MaxT     |           | Yes                       | Yes                        | Yes                        |
+| MaxT'    |           | Yes                       | Yes                        | Yes                        |
+| MaxTR    |           | Yes                       | Yes                        | Yes                        |
+| MaxTR'   |           | Yes                       | Yes                        | Yes                        |
+| Movers   |           | Tie                       | Yes                        | Yes                        |
+| Movers'  |           | Tie                       | Yes                        | Yes                        |
+| SumS     |           | Yes                       | Yes                        | Yes                        |
+| SumS'    |           | Yes                       | Yes                        | Yes                        |
+| SumT     |           | Yes                       | Yes                        | Yes                        |
+| SumT'    |           | Yes                       | Yes                        | Yes                        |
+
+{'failure': ["MaxSR'_", 'AvgS_', 'MaxSR_', "AvgS'_", 'MaxS_', "MaxS'_"],
+ 'success': ['SumS_',
+             'SumS_',
+             "MaxTR'_",
+             'MaxT_',
+             "AvgT'_",
+             'AvgS_',
+             "SumT'_",
+             'MaxTR_',
+             'MaxSR_',
+             "MaxT'_",
+             "MaxS'_",
+             'SumT_',
+             "SumS'_",
+             'AvgT_',
+             'BoxT_',
+             "AvgS'_",
+             'SumT_',
+             "MaxSR'_",
+             'BoxT_',
+             'AvgT_',
+             'MaxTR_',
+             "SumS'_",
+             "MaxT'_",
+             "SumT'_",
+             'MaxT_',
+             "AvgT'_",
+             "MaxTR'_",
+             'MaxS_'],
+ 'tie': ["Movers'_", 'Movers_', "BoxT'_"]}
+
+## WH Word prev vs post /phrases post vs prev
+# this analysis assumes pro only for post subj, V to T to C, and post subj in specTop
+#other analyses worked for this contrast
+
+| Metric   | Filters   | ita-postverbal-whW-prev-postv   | ita-postverbal-whP-postv-prev   |
+|----------+-----------+---------------------------------+---------------------------------|
+| AvgS     |           | Yes                             | No                              |
+| AvgS'    |           | Yes                             | No                              |
+| AvgT     |           | Yes                             | No                              |
+| AvgT'    |           | Yes                             | No                              |
+| BoxT     |           | Yes                             | No                              |
+| BoxT'    |           | Yes                             | No                              |
+| MaxS     |           | Yes                             | No                              |
+| MaxS'    |           | Yes                             | No                              |
+| MaxSR    |           | Yes                             | No                              |
+| MaxSR'   |           | Yes                             | No                              |
+| MaxT     |           | Yes                             | No                              |
+| MaxT'    |           | Yes                             | No                              |
+| MaxTR    |           | Yes                             | No                              |
+| MaxTR'   |           | Yes                             | No                              |
+| Movers   |           | Tie                             | Tie                             |
+| Movers'  |           | Tie                             | Tie                             |
+| SumS     |           | Yes                             | No                              |
+| SumS'    |           | Yes                             | No                              |
+| SumT     |           | Yes                             | No                              |
+| SumT'    |           | Yes                             | No                              |
+>>> comp.show()
+{'failure': ['MaxSR_',
+             "MaxS'_",
+             "SumT'_",
+             "SumS'_",
+             "BoxT'_",
+             "AvgT'_",
+             "AvgS'_",
+             "MaxTR'_",
+             'MaxT_',
+             'SumT_',
+             "MaxSR'_",
+             'MaxS_',
+             'BoxT_',
+             'SumS_',
+             'AvgT_',
+             'MaxTR_',
+             'AvgS_',
+             "MaxT'_"],
+ 'success': [],
+ 'tie': ['Movers_', "Movers'_"]}
+
+%%%RC NEW WITH MISTAKES FIXED
+
+| Metric   | Filters   | ita-postverbal-rc-OS-OO   | ita-postverbal-rc-OS-OOp   | ita-postverbal-rc-OO-OOp   |
+|----------+-----------+---------------------------+----------------------------+----------------------------|
+| AvgS     |           | Yes                       | Yes                        | Yes                        |
+| AvgS'    |           | Yes                       | Yes                        | Yes                        |
+| AvgT     |           | Yes                       | Yes                        | Yes                        |
+| AvgT'    |           | Yes                       | Yes                        | Yes                        |
+| BoxT     |           | Yes                       | Yes                        | Yes                        |
+| BoxT'    |           | Tie                       | Yes                        | Yes                        |
+| MaxS     |           | Yes                       | Yes                        | Yes                        |
+| MaxS'    |           | Yes                       | Yes                        | Yes                        |
+| MaxSR    |           | Yes                       | Yes                        | Yes                        |
+| MaxSR'   |           | Yes                       | Yes                        | Yes                        |
+| MaxT     |           | Yes                       | Yes                        | Yes                        |
+| MaxT'    |           | Yes                       | Yes                        | Yes                        |
+| MaxTR    |           | Yes                       | Yes                        | Yes                        |
+| MaxTR'   |           | Yes                       | Yes                        | Yes                        |
+| Movers   |           | Yes                       | Yes                        | Yes                        |
+| Movers'  |           | Tie                       | Yes                        | Yes                        |
+| SumS     |           | Yes                       | Yes                        | Yes                        |
+| SumS'    |           | Yes                       | Yes                        | Yes                        |
+| SumT     |           | Yes                       | Yes                        | Yes                        |
+| SumT'    |           | Yes                       | Yes                        | Yes                        |
+
+{'failure': [],
+ 'success': ['MaxT_',
+             "MaxTR'_",
+             "AvgS'_",
+             'MaxSR_',
+             "MaxT'_",
+             "MaxSR'_",
+             'MaxS_',
+             'SumT_',
+             "MaxS'_",
+             "SumT'_",
+             'SumS_',
+             'BoxT_',
+             "SumS'_",
+             'Movers_',
+             'AvgT_',
+             "AvgT'_",
+             'AvgS_',
+             'MaxTR_'],
+ 'tie': ["Movers'_", "BoxT'_"]}
+
+%%%%%%%%%%%%%%%%%%%%%RC in SUBJECT POSITION
+
+
+| Metric   | Filters   | ita-postverbal-rc-SS-SO   | ita-postverbal-rc-SS-SOp   | ita-postverbal-rc-SO-SOp   |
+|----------+-----------+---------------------------+----------------------------+----------------------------|
+| AvgS     |           | No                        | Yes                        | Yes                        |
+| AvgS'    |           | Yes                       | Yes                        | Yes                        |
+| AvgT     |           | Yes                       | Yes                        | Yes                        |
+| AvgT'    |           | Yes                       | Yes                        | Yes                        |
+| BoxT     |           | Yes                       | Yes                        | Yes                        |
+| BoxT'    |           | Tie                       | Yes                        | Yes                        |
+| MaxS     |           | Tie                       | Yes                        | Yes                        |
+| MaxS'    |           | Tie                       | Yes                        | Yes                        |
+| MaxSR    |           | Yes                       | Yes                        | Yes                        |
+| MaxSR'   |           | Yes                       | Yes                        | Yes                        |
+| MaxT     |           | Tie                       | Yes                        | Yes                        |
+| MaxT'    |           | Tie                       | Yes                        | Yes                        |
+| MaxTR    |           | Yes                       | Yes                        | Yes                        |
+| MaxTR'   |           | Yes                       | Yes                        | Yes                        |
+| Movers   |           | Yes                       | Yes                        | Yes                        |
+| Movers'  |           | Tie                       | Yes                        | Yes                        |
+| SumS     |           | Yes                       | Yes                        | Yes                        |
+| SumS'    |           | Yes                       | Yes                        | Yes                        |
+| SumT     |           | Yes                       | Yes                        | Yes                        |
+| SumT'    |           | Yes                       | Yes                        | Yes                        |
+
+
+>>> comp.show()
+{'failure': ['AvgS_'],
+ 'success': ['SumS_',
+             "SumT'_",
+             "SumS'_",
+             'Movers_',
+             'AvgT_',
+             "AvgT'_",
+             'SumT_',
+             'MaxTR_',
+             "AvgS'_",
+             "MaxTR'_",
+             'MaxSR_',
+             "MaxSR'_",
+             'BoxT_'],
+ 'tie': ["BoxT'_", 'MaxT_', "Movers'_", "MaxT'_", 'MaxS_', "MaxS'_"]}

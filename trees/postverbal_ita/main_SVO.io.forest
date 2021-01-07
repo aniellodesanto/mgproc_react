@@ -1,0 +1,40 @@
+\node[index]            at (CP)                       {1};
+\node[outdex]           at (CP)                       {2};
+%
+\node[index]            at (C)                        {2};
+\node[outdex]           at (C)                        {3};
+%
+\node[index]            at (TP)                       {2};
+\node[outdex]           at (TP)                       {4};
+%
+\node[index]            at (T1)                       {4};
+\node[outdex]           at (T1)                       {5};
+%
+\node[index]            at (t211)                     {5};
+\node[outdex]           at (t211)                     {6};
+%
+\node[index]            at (ha)                       {6};
+\node[outdex, boxed]    at (ha)                       {9};
+%
+\node[index]            at (t212)                     {6};
+\node[outdex]           at (t212)                     {7};
+%
+\node[index]            at (pro)                      {7};
+\node[outdex]           at (pro)                      {8};
+%
+\node[index]            at (t2122)                    {7};
+\node[outdex, boxed]    at (t2122)                   {10};
+%
+\node[index]            at (t21221)                  {10};
+\node[outdex]           at (t21221)                  {11};
+%
+\node[index]            at (t21222)                  {10};
+\node[outdex]           at (t21222)                  {12};
+%
+\node[index]            at (call)                    {12};
+\node[outdex]           at (call)                    {13};
+%
+\node[index]            at (Gio)                     {12};
+\node[outdex]           at (Gio)                     {14};
+%
+%

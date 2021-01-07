@@ -1,0 +1,43 @@
+python3 -i __init__.py
+#
+#
+mytree = tree_from_file('trees/islands/adjunct/shortNOI')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/islands/adjunct/shortNOI')
+texprint(mytree, filename='shortNOI_annotated', tree_directory='./trees/islands/adjunct/')
+
+mytree = tree_from_file('trees/islands/adjunct/shortYESI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/adjunct/shortYESI')
+ioprint(mytree, filename='trees/islands/adjunct/shortYESI')
+texprint(mytree, filename='shortYESI_annotated', tree_directory='./trees/islands/adjunct/')
+
+mytree = tree_from_file('trees/islands/adjunct/longNOI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/adjunct/longNOI')
+ioprint(mytree, filename='trees/islands/adjunct/longNOI')
+texprint(mytree, filename='longNOI_annotated', tree_directory='./trees/islands/adjunct/')
+
+
+mytree = tree_from_file('trees/islands/adjunct/longYESI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/adjunct/longYESI')
+ioprint(mytree, filename='trees/islands/adjunct/longYESI')
+texprint(mytree, filename='longYESI_annotated', tree_directory='./trees/islands/adjunct/')
+
+mytree = tree_from_file('trees/islands/adjunct/longYESI_noIntermediate')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/adjunct/longYESI_noIntermediate')
+ioprint(mytree, filename='trees/islands/adjunct/longYESI_noIntermediate')
+texprint(mytree, filename='longYESI_noIntermediate_annotated', tree_directory='./trees/islands/adjunct/')
+
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+my_metrics = metrics_from_file(inputfile='./metrics/base', ranks = 2)
+comp = comparisons_from_file('./comparisons/islands/wh_adjunct', directory='./trees/islands/adjunct/', metrics=my_metrics)
+
+# Check
+comp.show()
+comp.table()
+

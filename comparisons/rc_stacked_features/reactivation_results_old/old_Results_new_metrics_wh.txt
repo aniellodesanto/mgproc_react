@@ -1,0 +1,100 @@
+{'failure': ["SumBT'_",
+             'MaxRsort_',
+             "MaxBPsort'_",
+             'MaxRP_',
+             "AvgBT'_",
+             "MaxR'_",
+             "MaxBTsort'_",
+             "SumR'_",
+             'MaxBS_',
+             "AvgR'_",
+             'SumBS_',
+             "MaxRPsort'_",
+             'AvgBS_',
+             'SumRP_',
+             'MaxRT_',
+             'MaxBSsort_',
+             'SumRT_',
+             "MaxBS'_",
+             'AvgRT_',
+             "SumBS'_",
+             'MaxRTsort_',
+             "AvgBP'_",
+             'AvgRP_',
+             "AvgBS'_",
+             "MaxRT'_",
+             'MaxRPsort_',
+             'MaxBSsort_',
+             "SumRT'_",
+             'MaxBP_',
+             "MaxRP'_",
+             "AvgRT'_",
+             'SumBP_',
+             "SumRP'_",
+             "MaxRPsort'_",
+             'AvgBP_',
+             "AvgRP'_",
+             'MaxBT_',
+             'MaxBPsort_',
+             "MaxRPsort'_",
+             'SumBT_',
+             'MaxR_',
+             "MaxBP'_",
+             'AvgBT_',
+             'SumR_',
+             "SumBP'_",
+             'MaxBTsort_',
+             'AvgR_',
+             "MaxBT'_"],
+ 'success': [],
+ 'tie': []}
+| Metric     | Filters   | scrc-rcsc-wh   | eng-wh   | chi-wh   | kor-wh   | jap-wh   | right-center   |
+|------------+-----------+----------------+----------+----------+----------+----------+----------------|
+| AvgBP      |           | Tie            | Yes      | No       | No       | No       | No             |
+| AvgBP'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| AvgBS      |           | Tie            | Yes      | No       | No       | No       | No             |
+| AvgBS'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| AvgBT      |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| AvgBT'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| AvgR       |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| AvgR'      |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| AvgRP      |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| AvgRP'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| AvgRT      |           | Tie            | Yes      | No       | No       | No       | No             |
+| AvgRT'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| MaxBP      |           | Tie            | Yes      | No       | No       | No       | No             |
+| MaxBP'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxBPsort  |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxBPsort' |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxBS      |           | Tie            | Yes      | No       | No       | No       | No             |
+| MaxBS'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxBSsort  |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxBSsort  |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxBT      |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| MaxBT'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| MaxBTsort  |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxBTsort' |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxR       |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxR'      |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxRP      |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxRP'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxRPsort  |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxRPsort' |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxRPsort' |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxRPsort' |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| MaxRT      |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxRT'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| MaxRTsort  |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxRsort   |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| SumBP      |           | Tie            | Yes      | No       | No       | No       | No             |
+| SumBP'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| SumBS      |           | Tie            | Yes      | No       | No       | No       | No             |
+| SumBS'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| SumBT      |           | Tie            | Yes      | No       | No       | No       | No             |
+| SumBT'     |           | Tie            | Yes      | Yes      | No       | No       | No             |
+| SumR       |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| SumR'      |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| SumRP      |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| SumRP'     |           | Tie            | Tie      | Yes      | No       | No       | No             |
+| SumRT      |           | Tie            | Yes      | No       | No       | No       | No             |
+| SumRT'     |           | Tie            | Yes      | Yes      | No       | No       | No             |

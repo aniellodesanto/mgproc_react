@@ -1,0 +1,5 @@
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {horsetoTP},non-final] (DPrel)      .. controls +(120:6em) and +(220:4em) .. (TP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:6em) and +(220:4em) .. (CP);
+\draw[move = {seetoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+\draw[move = {protoTP}] (proh)      .. controls +(120:6em) and +(220:4em) .. (TPh);

@@ -1,0 +1,46 @@
+\node[index]            at (CP)                       {1};
+\node[outdex]           at (CP)                       {2};
+%
+\node[index]            at (C1)                       {2};
+\node[outdex]           at (C1)                       {3};
+%
+\node[index]            at (TP)                       {3};
+\node[outdex]           at (TP)                       {4};
+%
+\node[index]            at (t111)                     {4};
+\node[outdex]           at (t111)                     {5};
+%
+\node[index]            at (T1)                       {4};
+\node[outdex]           at (T1)                       {6};
+%
+\node[index]            at (TopP)                     {6};
+\node[outdex]           at (TopP)                     {7};
+%
+\node[index]            at (Top)                      {7};
+\node[outdex]           at (Top)                      {8};
+%
+\node[index]            at (t112111)                  {8};
+\node[outdex]           at (t112111)                  {9};
+%
+\node[index]            at (t112112)                  {8};
+\node[outdex]           at (t112112)                 {10};
+%
+\node[index]            at (Gio)                     {10};
+\node[outdex]           at (Gio)                     {11};
+%
+\node[index]            at (t1121122)                {10};
+\node[outdex]           at (t1121122)                {12};
+%
+\node[index]            at (t11211221)               {12};
+\node[outdex]           at (t11211221)               {13};
+%
+\node[index]            at (t11211222)               {12};
+\node[outdex]           at (t11211222)               {14};
+%
+\node[index]            at (call)                    {14};
+\node[outdex]           at (call)                    {15};
+%
+\node[index]            at (DP)                      {14};
+\node[outdex]           at (DP)                      {16};
+%
+%

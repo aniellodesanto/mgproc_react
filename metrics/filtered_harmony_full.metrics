@@ -1,0 +1,76 @@
+# General format:
+# name; LaTeX command; load_type; operator; trivial; filter; function
+#
+#
+# tenure based, trivial memory load is ignored, all filter variants are constructed
+#
+MaxT ;    ; tenure; safemax; ; I, U, P, *
+SumT ;   ; tenure; sum    ; ; I, U, P, *
+AvgT  ;   ; tenure; avg    ; ; I, U, P, *
+#
+#
+# tenure based, trivial memory load is not ignored, all filter variants are constructed
+#
+MaxT' ;   ; tenure; safemax; trivial; I, U, P, *
+SumT' ;   ; tenure; sum    ; trivial; I, U, P, *
+AvgT' ;   ; tenure;  avg   ; trivial; I, U, P, *
+#
+#
+# size based, trivial memory load is ignored
+#
+MaxS ;    ; size; safemax; ; I, U, P, *
+SumS ;   ; size; sum    ; ; I, U, P, *
+AvgS  ;   ; size  ; avg    
+#
+#
+# size based, trivial memory load is not ignored
+#
+MaxS'  ;  ; size  ; safemax    ; trivial
+SumS'  ;  ; size  ; sum    ; trivial
+AvgS'  ;  ; size  ; avg    ; trivial
+#
+#
+# reactivation based, reactivation_plain,  trivial is ignored
+#
+MaxRP  ;   ; reactP  ; safemax
+SumRP  ;   ; reactP  ; sum
+AvgRP  ;   ; reactP  ; avg
+MaxRPsort;  ; reactP  ; sorted 
+#
+# reactivation based, reactivation_plain, trivial is not ignored
+#
+MaxRP'  ;   ; reactP  ; safemax; trivial
+SumRP'  ;   ; reactP  ; sum; trivial
+AvgRP'  ;   ; reactP  ; avg; trivial
+MaxRPsort';  ; reactP  ; sorted ; trivial
+#
+# reactivation based, reactivation_extract, trivial is ignored
+#
+MaxR  ;   ; react  ; safemax
+SumR  ;   ; react  ; sum
+AvgR  ;   ; react  ; avg
+MaxRsort;  ; react  ; sorted 
+#
+# reactivation based, trivial is not ignored
+#
+MaxR'  ;   ; react  ; safemax; trivial
+SumR'  ;   ; react  ; sum; trivial
+AvgR'  ;   ; react  ; avg; trivial
+#MaxRsort';  ; react  ; sorted; trivial 
+#
+#
+# reactivation based, boostT_extract, trivial is ignored
+#
+MaxBT  ;   ; boostT  ; safemax
+SumBT  ;   ; boostT  ; sum
+#AvgBT  ;   ; boostT  ; avg
+MaxBTsort;  ; boostT  ; sorted 
+#
+# reactivation based, trivial is not ignored
+#
+MaxBT'  ;   ; boostT  ; safemax; trivial
+SumBT'  ;   ; boostT  ; sum; trivial
+AvgBT'  ;   ; boostT  ; avg; trivial
+MaxBYsort';  ; boostT  ; sorted; trivial 
+#
+#

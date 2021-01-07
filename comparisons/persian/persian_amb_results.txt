@@ -1,0 +1,100 @@
+%high attachment vs. low attachment — kayne (no ra)
+
+| Metric   | Filters   | persian-amb   |
+|----------+-----------+---------------|
+| AvgS     |           | No            |
+| AvgS'    |           | No            |
+| AvgT     |           | No            |
+| AvgT'    |           | No            |
+| BoxT     |           | Tie           |
+| BoxT'    |           | Tie           |
+| MaxS     |           | No            |
+| MaxS'    |           | No            |
+| MaxSR    |           | No            |
+| MaxSR'   |           | No            |
+| MaxT     |           | Tie           |
+| MaxT'    |           | Tie           |
+| MaxTR    |           | No            |
+| MaxTR'   |           | No            |
+| Movers   |           | Tie           |
+| Movers'  |           | Tie           |
+| SumS     |           | No            |
+| SumS'    |           | No            |
+| SumT     |           | No            |
+| SumT'    |           | No            |
+
+%kayne with ra
+
+| Metric   | Filters   | persian-amb   |
+|----------+-----------+---------------|
+| AvgS     |           | No            |
+| AvgS'    |           | No            |
+| AvgT     |           | No            |
+| AvgT'    |           | No            |
+| BoxT     |           | Tie           |
+| BoxT'    |           | Tie           |
+| MaxS     |           | No            |
+| MaxS'    |           | No            |
+| MaxSR    |           | No            |
+| MaxSR'   |           | No            |
+| MaxT     |           | Tie           |
+| MaxT'    |           | Tie           |
+| MaxTR    |           | No            |
+| MaxTR'   |           | No            |
+| Movers   |           | Tie           |
+| Movers'  |           | Tie           |
+| SumS     |           | No            |
+| SumS'    |           | No            |
+| SumT     |           | No            |
+| SumT'    |           | No            |
+
+%high attachment vs. low attachment — karimi (base gen, no ra)
+
+
+| Metric   | Filters   | persian-amb   |
+|----------+-----------+---------------|
+| AvgS     |           | Tie           |
+| AvgS'    |           | Tie           |
+| AvgT     |           | Yes           |
+| AvgT'    |           | No            |
+| BoxT     |           | No            |
+| BoxT'    |           | Tie           |
+| MaxS     |           | Tie           |
+| MaxS'    |           | Tie           |
+| MaxSR    |           | Tie           |
+| MaxSR'   |           | Tie           |
+| MaxT     |           | Tie           |
+| MaxT'    |           | Tie           |
+| MaxTR    |           | No            |
+| MaxTR'   |           | No            |
+| Movers   |           | Tie           |
+| Movers'  |           | Tie           |
+| SumS     |           | Tie           |
+| SumS'    |           | Tie           |
+| SumT     |           | No            |
+| SumT'    |           | No            |
+
+%high attachment vs. low attachment — karimi (base gen, ra movement)
+
+| Metric   | Filters   | persian-amb   |
+|----------+-----------+---------------|
+| AvgS     |           | Yes           |
+| AvgS'    |           | Yes           |
+| AvgT     |           | No            |
+| AvgT'    |           | No            |
+| BoxT     |           | Tie           |
+| BoxT'    |           | Tie           |
+| MaxS     |           | Tie           |
+| MaxS'    |           | Tie           |
+| MaxSR    |           | Yes           |
+| MaxSR'   |           | Yes           |
+| MaxT     |           | Tie           |
+| MaxT'    |           | Tie           |
+| MaxTR    |           | No            |
+| MaxTR'   |           | No            |
+| Movers   |           | Tie           |
+| Movers'  |           | Tie           |
+| SumS     |           | Yes           |
+| SumS'    |           | Yes           |
+| SumT     |           | No            |
+| SumT'    |           | No            |

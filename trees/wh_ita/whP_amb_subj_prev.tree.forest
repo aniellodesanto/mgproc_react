@@ -1,0 +1,21 @@
+[CP, name=CP
+    [C$'$, name=C1
+    [TP, name=TP
+        [T$'$, name=T1
+            [$v$P
+            [DP,name=DP
+            [quale, name=which]
+                [ragazzo, name= boy]
+                ]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [chiama, name=call]
+                            [Gio, name=Gio]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]

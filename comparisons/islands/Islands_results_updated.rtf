@@ -1,0 +1,90 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww30420\viewh13680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #########Subject Island: Long vs Short extraction.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs14 \cf2 \CocoaLigature0 | Metric   | Filters   | LongNoIsland-vs-LongIsland   | ShortNoIsland-vs-ShortIsland   | ShortNoIsland-vs-LongNoIsland   | ShortNoIsland-vs-LongIsland   | ShortIsland-vs-LongIsland   | ShortIsland-vs-LongNoIsland   |\
+|----------+-----------+------------------------------+--------------------------------+---------------------------------+-------------------------------+-----------------------------+-------------------------------|\
+| AvgS     |           | No                           | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| AvgS'    |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| AvgT     |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| AvgT'    |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| BoxT     |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| BoxT'    |           | Yes                          | Yes                            | No                              | Yes                           | No                          | No                            |\
+| MaxS     |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| MaxS'    |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| MaxSR    |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| MaxSR'   |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| MaxT     |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | Tie                           |\
+| MaxT'    |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | Tie                           |\
+| MaxTR    |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | No                            |\
+| MaxTR'   |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | No                            |\
+| Movers   |           | Yes                          | Tie                            | Tie                             | Yes                           | Yes                         | Tie                           |\
+| Movers'  |           | Tie                          | Tie                            | Tie                             | Tie                           | Tie                         | Tie                           |\
+| SumS     |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| SumS'    |           | Yes                          | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| SumT     |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           |\
+| SumT'    |           | Yes                          | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           |
+\fs22 \cf2 \
+\
+\
+\
+# Subject Island. Subject vs Object extraction (from Sprouse, Caponigiro, Cecchetto)\
+\
+\
+| Metric   | Filters   | objNOI-vs-objI   | subjNOI-vs-subjI   | objNOI-vs-subjNOI   | objI-vs-subjI   | objNOI-vs-subjI   | objI-vs-subjNOI   |\
+|----------+-----------+------------------+--------------------+---------------------+-----------------+-------------------+-------------------|\
+| AvgS     |           | Yes              | No                 | Yes                 | No              | Yes               | No                |\
+| AvgS'    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| AvgT     |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| AvgT'    |           | Yes              | Yes                | No                  | No              | No                | No                |\
+| BoxT     |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| BoxT'    |           | Yes              | Yes                | Tie                 | Tie             | Yes               | No                |\
+| MaxS     |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxS'    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxSR    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxSR'   |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxT     |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxT'    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxTR    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| MaxTR'   |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| Movers   |           | Tie              | Yes                | No                  | Tie             | Tie               | No                |\
+| Movers'  |           | Tie              | Tie                | Tie                 | Tie             | Tie               | Tie               |\
+| SumS     |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| SumS'    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| SumT     |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+| SumT'    |           | Yes              | Yes                | No                  | No              | Yes               | No                |\
+\
+\
+# Adjunct Island\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs18 \cf2 | Metric   | Filters   | ShortNoIsland-vs-ShortIsland   | ShortNoIsland-vs-LongNoIsland   | ShortNoIsland-vs-LongIsland   | ShortIsland-vs-LongIsland   | ShortIsland-vs-LongNoIsland   | LongNOIsland-vs-LongIsland   |\
+|----------+-----------+--------------------------------+---------------------------------+-------------------------------+-----------------------------+-------------------------------+------------------------------|\
+| AvgS     |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| AvgS'    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| AvgT     |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| AvgT'    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| BoxT     |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| BoxT'    |           | Tie                            | No                              | No                            | No                          | No                            | Tie                          |\
+| MaxS     |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| MaxS'    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| MaxSR    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| MaxSR'   |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| MaxT     |           | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| MaxT'    |           | Tie                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| MaxTR    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| MaxTR'   |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| Movers   |           | Tie                            | Tie                             | Yes                           | Yes                         | Tie                           | Yes                          |\
+| Movers'  |           | Tie                            | Tie                             | Yes                           | Yes                         | Tie                           | Yes                          |\
+| SumS     |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| SumS'    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | Yes                          |\
+| SumT     |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |\
+| SumT'    |           | Yes                            | Yes                             | Yes                           | Yes                         | Yes                           | No                           |}

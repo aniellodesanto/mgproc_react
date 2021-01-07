@@ -1,0 +1,15 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+objNOI-vs-objI ;  ; objNOI ; objYESI ;
+#
+subjNOI-vs-subjI ;  ; subjNOI ; subjYESI ;  
+#
+objNOI-vs-subjNOI ;  ; objNOI ; subjNOI ; 
+#this because the subject Island is the one with the violation
+objI-vs-subjI ;  ; objYESI ; subjYESI ; 
+#this because the subject Island is the one with the violation
+objNOI-vs-subjI ;  ; objNOI ; subjYESI ;     
+#
+objI-vs-subjNOI ;  ; objYESI ; subjNOI ;     

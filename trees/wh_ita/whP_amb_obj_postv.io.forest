@@ -1,0 +1,46 @@
+\node[index]            at (CP)                       {1};
+\node[outdex]           at (CP)                       {2};
+%
+\node[index]            at (C1)                       {2};
+\node[outdex]           at (C1)                       {3};
+%
+\node[index]            at (t11)                      {3};
+\node[outdex, boxed]    at (t11)                     {12};
+%
+\node[index]            at (TP)                       {3};
+\node[outdex]           at (TP)                       {4};
+%
+\node[index]            at (t121)                     {4};
+\node[outdex, boxed]    at (t121)                    {13};
+%
+\node[index]            at (T1)                       {4};
+\node[outdex]           at (T1)                       {5};
+%
+\node[index]            at (t1221)                    {5};
+\node[outdex]           at (t1221)                    {6};
+%
+\node[index]            at (Gio)                      {6};
+\node[outdex, boxed]    at (Gio)                     {15};
+%
+\node[index]            at (t12212)                   {6};
+\node[outdex]           at (t12212)                   {7};
+%
+\node[index]            at (t122121)                  {7};
+\node[outdex, boxed]    at (t122121)                 {16};
+%
+\node[index]            at (t122122)                  {7};
+\node[outdex]           at (t122122)                  {8};
+%
+\node[index]            at (call)                     {8};
+\node[outdex, boxed]    at (call)                    {14};
+%
+\node[index]            at (DP)                       {8};
+\node[outdex]           at (DP)                       {9};
+%
+\node[index]            at (which)                    {9};
+\node[outdex]           at (which)                   {10};
+%
+\node[index]            at (boy)                      {9};
+\node[outdex]           at (boy)                     {11};
+%
+%

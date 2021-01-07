@@ -1,0 +1,10 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+#OS vs OO
+ita-postverbal-rc-OS-OO;  ; rc_OS ; rc_OO ; 
+#OS vs OOp
+ita-postverbal-rc-OS-OOp;  ; rc_OS ; rc_OOp ; 
+#OO vs OOp
+ita-postverbal-rc-OO-OOp;  ; rc_OO ; rc_OOp ; 

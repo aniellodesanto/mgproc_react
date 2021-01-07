@@ -1,0 +1,21 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+#scrc-rcsc-prom ;  ; scrc_prom      ; rcsc_prom       ; 
+#
+eng-prom       ;  ; eng_src_prom   ; eng_orc_prom    ; 
+#chi-prom       ;  ; chn_src_prom   ; chn_orc_prom    ; 
+chi-prom       ;  ; chn_orc_prom   ; chn_src_prom    ; 
+kor-prom       ;  ; kor_src_prom   ; kor_orc_prom    ; 
+jap-prom       ;  ; jap_src_prom   ; jap_orc_prom    ; 
+#
+#right-center   ;  ; orc_right_prom ; orc_center_prom ; 
+#
+priming_eng-oo-so-prom ;  ; priming_prom_eng_oo ; priming_prom_eng_so ; 
+priming_eng-ss-os-prom ;  ; priming_prom_eng_ss ; priming_prom_eng_os ; 
+#I am saying ss >> oo, but they should tie on the following
+#priming_eng-ss-oo-prom ;  ; priming_prom_eng_ss ; priming_prom_eng_oo ; 
+
+
+

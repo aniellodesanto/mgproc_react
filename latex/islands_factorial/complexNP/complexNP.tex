@@ -1,0 +1,249 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+% indexed node labels in trees;
+% these macros are only needed if you want to use the output of the .fprint method
+\newcommand{\Lab}[3]{\tsp{#2}#1\tsb{#3}} % for normal nodes
+\newcommand{\BLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed leaves
+\newcommand{\IBLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed interior nodes
+
+
+
+\begin{document}
+
+%Short/Non Island
+%Who __ claimed that John bought a car?
+
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[C1]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[who, name=who]
+					[$v$',
+						[$v1$]
+						[VP,
+							[claimed]
+							[CP,
+								[that]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+											[John, name = subj]
+											[$v$',
+												[$v2$]
+												[VP,
+													[bought]
+													[DP,
+													[a]
+													[car]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom},non-final] (who)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (who)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+
+%Long/Non Island
+%What did you claim  that John bought __?
+%
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[did]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[you, name=subjMatrix]
+					[$v$',
+						[$v1$]
+						[VP,
+							[claim]
+							[CP,
+								[that]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+											[John, name= subj
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[bought]
+													[what, name = what
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+%\draw[move = {nom},non-final] (what)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom}] (subjMatrix)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (what)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+
+%Short/Island
+%Who __ made the claim that John bought a car?
+
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[C]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[who, name=who]
+					[$v$',
+						[$v1$]
+						[VP,
+							[made]
+							[DP,
+								[the]
+								[NP,
+									[claim]
+									[CP,
+								[that]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+											[John, name = subj]
+											[$v$',
+												[$v2$]
+												[VP,
+													[bought]
+													[DP,
+													[a]
+													[car]
+													]
+												]
+											]
+										]
+									]
+								]
+							]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom},non-final] (who)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (who)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+%
+%%Long/ Island
+%%What did you make the claim that John bought __?
+
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[did]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[you, name=subjMatrix]
+					[$v$',
+						[$v1$]
+						[VP,
+							[make]
+							[DP,
+								[the]
+								[NP,
+									[claim]
+									[CP,
+								[that]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+											[John, name = subj]
+											[$v$',
+												[$v2$]
+												[VP,
+													[bought]
+													[what,name=what]
+												]
+											]
+										]
+									]
+								]
+							]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom}] (subjMatrix)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (what)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+
+\end{document}

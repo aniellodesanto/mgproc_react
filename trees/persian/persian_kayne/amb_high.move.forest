@@ -1,0 +1,5 @@
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+\draw[move = {EPP},non-final] (Relsub) to[out=west,in=south west] (ETP);
+\draw[move = {RelM}] (ETP) to[out=south west,in=south west] (RelH);
+\draw[move = {Vtov}] (EV) to[out=east,in=south east] (Ev');

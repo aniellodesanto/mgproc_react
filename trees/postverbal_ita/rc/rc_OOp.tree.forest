@@ -1,0 +1,58 @@
+[CP, name=CPh
+    [C, empty]
+    [TP, name=TPh
+        [T$'$, name=T1h
+            [$v$P
+                [pro, empty, name=proh]
+                    [$v'$
+                        [$v$, empty]
+                        [VP
+                            [vedo, name=see]
+                            [DP
+                            	[il]
+				[CP, name = CP
+					[C$'$, name=C1
+						[che]
+						[TP, name=TP
+							[pro, empty]
+							[T$'$, name=T1
+							[PerfP,
+	 							[ha, name=ha]
+								[TopP, name = TopP
+								[Top$'$, name=Top
+								[Top, empty]
+								[FocP, name = FocP
+								[Foc$'$, name=Foc
+								[Foc, empty]
+								[$v$P, name =vP
+								[DP, name=DPlion
+										[il]
+										[leone]
+									]
+								[$v'$
+									[$v$]
+									[VP
+									[inseguito, name=chase]
+									[DP, name=DPrel
+									[D]
+									[cavallo, name=horse]
+									]
+									]
+								]
+								]
+								]
+								]
+								]
+								]
+								]
+							]
+						]
+					]
+				]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]

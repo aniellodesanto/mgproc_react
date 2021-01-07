@@ -1,0 +1,2 @@
+\draw[move = {protoTP}] (pro)      .. controls +(180:6em) and +(220:4em) .. (TP);
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);

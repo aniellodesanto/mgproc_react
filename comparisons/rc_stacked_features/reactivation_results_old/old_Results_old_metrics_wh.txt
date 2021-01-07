@@ -1,0 +1,180 @@
+{'failure': ['MaxTR_IU',
+             "AvgT'_",
+             "SumT'_U",
+             "AvgT'_I",
+             "SumT'_P",
+             'BoxT_PU',
+             'MaxTR_IP',
+             "AvgT'_U",
+             'SumT_',
+             'MaxS_',
+             "SumT'_IU",
+             'MaxTR_PU',
+             "AvgT'_P",
+             'SumS_',
+             'SumT_I',
+             "SumT'_IP",
+             'SumT_U',
+             "AvgT'_IU",
+             'Movers_',
+             'SumT_P',
+             "SumT'_PU",
+             'AvgS_',
+             "AvgT'_IP",
+             'SumT_IU',
+             'AvgT_U',
+             'MaxSR_',
+             "AvgT'_PU",
+             'AvgT_P',
+             "MaxS'_",
+             'SumT_IP',
+             'AvgT_IU',
+             "SumS'_",
+             "BoxT'_",
+             'SumT_PU',
+             "Movers'_",
+             "MaxTR'_",
+             "BoxT'_U",
+             "AvgS'_",
+             "MaxTR'_I",
+             'AvgT_PU',
+             "MaxSR'_",
+             "BoxT'_P",
+             'BoxT_',
+             "MaxTR'_U",
+             "BoxT'_IU",
+             "MaxTR'_P",
+             'BoxT_I',
+             'BoxT_U',
+             "MaxTR'_IU",
+             'MaxTR_',
+             'BoxT_P',
+             'MaxTR_I',
+             "SumT'_I",
+             "MaxTR'_IP",
+             "BoxT'_PU",
+             'BoxT_IU',
+             "SumT'_",
+             'MaxTR_U',
+             "MaxTR'_PU",
+             'MaxTR_P',
+             'BoxT_IP'],
+ 'success': ['AvgT_', 'AvgT_IP', 'AvgT_I'],
+ 'tie': ['MaxT_IPU',
+         "MaxTR'_IPU",
+         'BoxT_IPU',
+         'MaxTR_IPU',
+         'MaxT_',
+         "MaxT'_",
+         "SumT'_IPU",
+         "MaxT'_I",
+         "MaxT'_U",
+         "AvgT'_IPU",
+         "MaxT'_P",
+         "BoxT'_I",
+         "MaxT'_IU",
+         'SumT_IPU',
+         'MaxT_I',
+         "MaxT'_IP",
+         'MaxT_U',
+         'AvgT_IPU',
+         "MaxT'_PU",
+         'MaxT_P',
+         "BoxT'_IP",
+         'MaxT_IU',
+         "MaxT'_IPU",
+         'MaxT_IP',
+         "BoxT'_IPU",
+         'MaxT_PU']}
+| Metric   | Filters   | scrc-rcsc-wh   | eng-wh   | chi-wh   | kor-wh   | jap-wh   | right-center   |
+|----------+-----------+----------------+----------+----------+----------+----------+----------------|
+| AvgS     |           | Tie            | Tie      | No       | Yes      | Yes      | No             |
+| AvgS'    |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| AvgT     |           | Yes            | Yes      | Yes      | Yes      | Yes      | Yes            |
+| AvgT     | I         | Yes            | Yes      | Yes      | Yes      | Yes      | Yes            |
+| AvgT     | IP        | Yes            | Yes      | Yes      | Yes      | Yes      | Yes            |
+| AvgT     | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| AvgT     | IU        | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| AvgT     | P         | No             | Yes      | Yes      | No       | No       | Yes            |
+| AvgT     | PU        | No             | Yes      | Yes      | No       | No       | Yes            |
+| AvgT     | U         | No             | No       | Yes      | Yes      | Yes      | Yes            |
+| AvgT'    |           | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| AvgT'    | I         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| AvgT'    | IP        | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| AvgT'    | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| AvgT'    | IU        | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| AvgT'    | P         | No             | Yes      | No       | Yes      | Yes      | Yes            |
+| AvgT'    | PU        | No             | No       | No       | Yes      | Yes      | Yes            |
+| AvgT'    | U         | No             | Yes      | Yes      | No       | No       | Yes            |
+| BoxT     |           | Tie            | Yes      | No       | No       | No       | No             |
+| BoxT     | I         | Tie            | Yes      | Tie      | No       | No       | Tie            |
+| BoxT     | IP        | Tie            | Yes      | No       | Tie      | Tie      | Tie            |
+| BoxT     | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| BoxT     | IU        | Tie            | Yes      | Yes      | No       | No       | Tie            |
+| BoxT     | P         | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| BoxT     | PU        | Tie            | Tie      | No       | Yes      | Yes      | No             |
+| BoxT     | U         | Tie            | Yes      | Tie      | No       | No       | No             |
+| BoxT'    |           | Tie            | Tie      | Tie      | Tie      | Tie      | No             |
+| BoxT'    | I         | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| BoxT'    | IP        | Tie            | Yes      | Tie      | Tie      | Tie      | Tie            |
+| BoxT'    | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| BoxT'    | IU        | Tie            | No       | Tie      | Tie      | Tie      | Tie            |
+| BoxT'    | P         | Tie            | Yes      | Tie      | Tie      | Tie      | No             |
+| BoxT'    | PU        | Tie            | Tie      | Tie      | Tie      | Tie      | No             |
+| BoxT'    | U         | Tie            | No       | Tie      | Tie      | Tie      | No             |
+| MaxS     |           | Tie            | Yes      | No       | Tie      | Tie      | No             |
+| MaxS'    |           | Tie            | Yes      | No       | Tie      | Tie      | No             |
+| MaxSR    |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxSR'   |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| MaxT     |           | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT     | I         | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT     | IP        | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT     | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| MaxT     | IU        | Yes            | Yes      | Tie      | Tie      | Tie      | Yes            |
+| MaxT     | P         | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT     | PU        | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT     | U         | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    |           | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    | I         | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    | IP        | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| MaxT'    | IU        | Yes            | Yes      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    | P         | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    | PU        | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxT'    | U         | Tie            | Tie      | Tie      | Tie      | Tie      | Yes            |
+| MaxTR    |           | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR    | I         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR    | IP        | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| MaxTR    | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| MaxTR    | IU        | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR    | P         | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| MaxTR    | PU        | No             | Yes      | No       | Yes      | Yes      | Yes            |
+| MaxTR    | U         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR'   |           | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR'   | I         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR'   | IP        | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| MaxTR'   | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| MaxTR'   | IU        | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| MaxTR'   | P         | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| MaxTR'   | PU        | No             | Yes      | No       | Yes      | Yes      | Yes            |
+| MaxTR'   | U         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| Movers   |           | Tie            | Yes      | No       | Tie      | Tie      | No             |
+| Movers'  |           | Tie            | Tie      | Tie      | Tie      | Tie      | No             |
+| SumS     |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| SumS'    |           | Tie            | Yes      | No       | Yes      | Yes      | No             |
+| SumT     |           | Yes            | Yes      | Tie      | No       | No       | Yes            |
+| SumT     | I         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| SumT     | IP        | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| SumT     | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| SumT     | IU        | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| SumT     | P         | No             | Yes      | No       | Yes      | Yes      | Yes            |
+| SumT     | PU        | No             | Yes      | No       | Yes      | Yes      | Yes            |
+| SumT     | U         | No             | Yes      | Yes      | No       | No       | Yes            |
+| SumT'    |           | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| SumT'    | I         | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| SumT'    | IP        | Yes            | Yes      | No       | Yes      | Yes      | Yes            |
+| SumT'    | IPU       | Tie            | Tie      | Tie      | Tie      | Tie      | Tie            |
+| SumT'    | IU        | Yes            | Yes      | Yes      | No       | No       | Yes            |
+| SumT'    | P         | No             | Yes      | No       | Yes      | Yes      | Yes            |
+| SumT'    | PU        | No             | No       | No       | Yes      | Yes      | Yes            |
+| SumT'    | U         | No             | Yes      | Yes      | No       | No       | Yes            |

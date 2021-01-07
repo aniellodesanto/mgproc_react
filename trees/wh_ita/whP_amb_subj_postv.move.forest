@@ -1,0 +1,2 @@
+\draw[move = {chiamatoT1}] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {DPtoCP}] (DP)      .. controls +(120:6em) and +(220:4em) .. (CP);

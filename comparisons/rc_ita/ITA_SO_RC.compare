@@ -1,0 +1,8 @@
+# General format:
+# name; LaTeX command; winner; loser
+#OS vs OOp
+#ita-rc-OS-OOp-amb ;  ; rc_amb_subj ; rc_amb_obj ; 
+#OS vs OO
+ita-rc-OS-OO ;  ; rc_amb_subj ; rc_amb_obj_prev ; 
+#OOprev vs OOpost
+#ita-rc-OO-OOp;  ; rc_amb_obj_prev ; rc_amb_obj ; 

@@ -1,0 +1,72 @@
+[CP
+    [C, empty ]
+    [TP, name=TP1
+        [T$'$
+            [T, empty]
+            [$v$P
+                [DP, name=TP1Subj
+                    [the]
+                    [NP
+                        [fact ]
+                        [CP
+                            [that ]
+                            [TP, name=TP2
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=TP2Subj
+                                            [the]
+                                            [NP
+                                                [employee]
+                                                [CP, name=RCtarget
+                                                    [C'
+                                                        [C, empty]
+                                                        [TP, name=TP3
+                                                            [T$'$
+                                                                [T, empty]
+                                                                [$v$P
+                                                                    [DP, name=TP3Subj
+                                                                        [the]
+                                                                        [manager]
+                                                                    ]
+                                                                    [$v'$
+                                                                        [$v$, empty]
+                                                                        [VP
+                                                                            [hired]
+                                                                            [who, name=RCsource]
+                                                                        ]
+                                                                    ]
+                                                                ]
+                                                            ]
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [stole]
+                                                [office supplies]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                [$v'$
+                    [$v$, empty]
+                    [VP
+                        [worried]
+                        [DP
+                            [the]
+                            [executive]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]

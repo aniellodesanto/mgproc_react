@@ -1,0 +1,4 @@
+\draw[move = {chiamatoT1}, non-final] (call)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {chiamatoC1}] (T1)      .. controls +(120:6em) and +(220:4em) .. (C1);
+\draw[move = {GiotoTopP}] (Gio)      .. controls +(220:6em) and +(220:4em) .. (TopP);
+\draw[move = {DPtoCP}] (DP)      .. controls +(220:6em) and +(220:4em) .. (CP);

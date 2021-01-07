@@ -1,0 +1,20 @@
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+        [T$'$, name=T1
+        [PerfP,
+            [ha, name=ha]
+            [$v$P, name=t212
+                [pro, name=pro, empty]
+                [$v'$, name=t2122
+                    [$v$, name=t21221, empty]
+                    [VP, name=t21222
+                        [chiamato, name=call]
+                        [Gio, name=Gio]
+                    ]
+                ]
+            ]
+        ]
+        ]
+    ]
+]

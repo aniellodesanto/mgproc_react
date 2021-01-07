@@ -1,0 +1,5 @@
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {liontoTP}] (DPlion)      .. controls +(120:6em) and +(220:4em) .. (TP);
+\draw[move = {horsetoCP}] (DPrel)      .. controls +(220:8em) and +(220:4em) .. (CP);
+\draw[move = {jumptoT1h}] (jump)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+\draw[move = {RELtoTP}] (DPSubj)      .. controls +(120:6em) and +(220:4em) .. (TPh);

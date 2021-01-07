@@ -1,0 +1,4 @@
+\draw[move={nom}] (TP1Subj) .. controls +(130:4em) and +(220:2em) .. (TP1);
+\draw[move={nom}] (TP2Subj) .. controls +(130:4em) and +(220:2em) .. (TP2);
+\draw[move={nom}] (TP3Subj) .. controls +(130:4em) and +(220:2em) .. (TP3);
+\draw[move={rel}] (RCsource) .. controls +(110:10em) and +(220:2em) .. (RCtarget);

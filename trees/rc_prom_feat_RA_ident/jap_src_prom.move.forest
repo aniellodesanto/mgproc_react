@@ -1,0 +1,6 @@
+\draw[move={nom}] (Subject) .. controls +(120:2em) and +(220:4em) .. (TP1Spec);
+\draw[move={rel}] (headNP)  .. controls +(120:2em) and +(220:6em) .. (CP2Spec);
+\draw[move={nom}] (headNP)  .. controls +(110:4em) and +(230:4em) .. (TP2Spec);
+\draw[move={ra}] (headNP3) .. controls +(70:8em) and +(220:4em)  .. (vP1Spec);
+\draw[move={ra}] (headNP2) .. controls +(70:8em) and +(220:4em)  .. (vP2Spec);
+\draw[move={ra}] (TP2Spec) .. controls +(190:4em) and +(210:7em) .. (TP2land);

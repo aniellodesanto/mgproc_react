@@ -1,0 +1,25 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+#
+noILong-vs-ILong ;  ; longNOI ; longYESI ;
+#
+noIShort-vs-IShort ;  ; shortNOI ; shortYESI ;  
+#
+noIShort-vs-noILong ;  ; shortNOI ; longNOI ; 
+#
+IShort-vs-ILong ;  ; shortYESI ; longYESI ;  
+#this because longYESI  is the only one with a  violation
+#
+noIShort-vs-ILong ;  ; shortNOI ; longYESI ;   
+#
+#this without intermediate movement in Island violation
+#
+#
+noILong-vs-ILongNoInte ;  ; longNOI ; longYESI_noIntermediate ;
+#
+#
+IShort-vs-ILongNoInte ;  ; shortYESI ; longYESI_noIntermediate ;   
+#
+noIShort-vs-ILongNoInte ;  ; shortNOI ; longYESI_noIntermediate ;     

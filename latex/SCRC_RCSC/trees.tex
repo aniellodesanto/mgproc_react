@@ -1,0 +1,66 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+% indexed node labels in trees;
+% these macros are only needed if you want to use the output of the .fprint method
+\newcommand{\Lab}[3]{\tsp{#2}#1\tsb{#3}} % for normal nodes
+\newcommand{\BLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed leaves
+\newcommand{\IBLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed interior nodes
+
+
+
+\begin{document}
+
+\begin{center}
+\textbf{RCSC  vs. SCRC --- Promotion vs. WH Analysis}
+\end{center}
+
+
+
+\begin{center}
+%1) Orc Center Prom
+\input{./rcsc_prom.io.mgproc.forest}
+\end{center}
+
+\begin{center}
+%2) Orc Right Prom
+\input{./scrc_prom.io.mgproc.forest}
+\end{center}
+
+
+
+\newpage
+
+
+\begin{center}
+%1) Orc Center Wh
+\input{./rcsc_wh.io.mgproc.forest}
+\end{center}
+
+
+
+
+\begin{center}
+%2) Orc Right Wh
+\input{./scrc_wh.io.mgproc.forest}
+\end{center}
+
+
+
+
+
+\end{document}

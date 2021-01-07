@@ -1,0 +1,73 @@
+python3 -i __init__.py
+#high attachment with ra
+mytree = tree_from_file('trees/persian/persian_kayne_ra/amb_high')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/persian/persian_kayne_ra/amb_high')
+
+#print annotated tree
+ioprint(mytree, filename='trees/persian/persian_kayne_ra/amb_high_annotated')
+my_tree = tree_from_file('./trees/persian/persian_kayne_ra/amb_low')
+texprint(my_tree, filename='amb_low_PRINT', tree_directory='./trees/persian/persian_kayne_ra/')
+
+#low with ra
+
+mytree = tree_from_file('trees/persian/persian_kayne_ra/amb_low')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/persian/persian_kayne_ra/amb_low')
+
+#print annotated tree
+ioprint(mytree, filename='trees/persian/persian_kayne_ra/amb_low_annotated')
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/persian/persian_amb', directory='./trees/persian/persian_kayne_ra/', metrics=my_metrics)
+
+
+#high attachment
+
+mytree = tree_from_file('trees/persian/persian_karimi/amb_high')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/persian/persian_karimi/amb_high')
+
+#print annotated tree
+texprint(my_tree, filename='amb_high_Karimi', tree_directory='./trees/persian/persian_karimi/')
+texprint(my_tree, filename='amb_low_Karimi', tree_directory='./trees/persian/persian_karimi/')
+
+#low
+
+mytree = tree_from_file('trees/persian/persian_karimi/amb_low')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/persian/persian_karimi/amb_low')
+
+#COmparison
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/persian/persian_amb', directory='./trees/persian/persian_karimi/', metrics=my_metrics)
+
+
+###############
+#high attachment
+
+my_tree = tree_from_file('trees/persian/persian_karimi/ra_movement/amb_high')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/persian/persian_karimi/ra_movement/amb_high')
+
+
+texprint(my_tree, filename='amb_high_Karimi', tree_directory='./trees/persian/persian_karimi/')
+
+texprint(my_tree, filename='amb_low_Karimi', tree_directory='./trees/persian/persian_karimi/')
+
+
+#low
+
+mytree = tree_from_file('trees/persian/persian_karimi/ra_movement/amb_low')
+mytree.show_leaves()
+ioprint(mytree, filename='trees/persian/persian_karimi/ra_movement/amb_low')
+
+#COmparison
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/persian/persian_amb', directory='./trees/persian/persian_karimi/ra_movement/', metrics=my_metrics)
+
+#comp.show()
+#comp.table()

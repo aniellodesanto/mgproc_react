@@ -1,0 +1,55 @@
+python3 -i __init__.py
+#
+#Pre processing
+
+#OO
+mytree = tree_from_file('trees/priming_rc_eng_prom/priming_prom_eng_oo')
+mytree.show_leaves()
+mytree = tree_from_file('trees/priming_rc_eng_prom1/priming_prom_eng_oo')
+ioprint(mytree, filename='trees/priming_rc_eng_prom1/priming_prom_eng_oo')
+texprint(mytree, filename='eng_oo_annotated', tree_directory='./trees/priming_rc_eng_prom1/')
+
+#OS
+mytree = tree_from_file('trees/priming_rc_eng_prom/priming_prom_eng_os')
+mytree.show_leaves()
+mytree = tree_from_file('trees/priming_rc_eng_prom1/priming_prom_eng_os')
+ioprint(mytree, filename='trees/priming_rc_eng_prom/priming_prom_eng_os')
+texprint(mytree, filename='eng_os_annotated', tree_directory='./trees/priming_rc_eng_prom1/')
+
+#SO
+mytree = tree_from_file('trees/priming_rc_eng_prom/priming_prom_eng_so')
+mytree.show_leaves()
+mytree = tree_from_file('trees/priming_rc_eng_prom1/priming_prom_eng_so')
+ioprint(mytree, filename='trees/priming_rc_eng_prom/priming_prom_eng_so')
+texprint(mytree, filename='eng_so_annotated', tree_directory='./trees/priming_rc_eng_prom1/')
+
+#SS
+mytree = tree_from_file('trees/priming_rc_eng_prom1/priming_prom_eng_ss')
+mytree.show_leaves()
+mytree = tree_from_file('trees/priming_rc_eng_prom/priming_prom_eng_ss')
+ioprint(mytree, filename='trees/priming_rc_eng_prom/priming_prom_eng_ss')
+texprint(mytree, filename='eng_ss_annotated', tree_directory='./trees/priming_rc_eng_prom1/')
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation')
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation')
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation', ranks = 2)
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 2)
+#
+my_metrics = metrics_from_file(inputfile='./metrics/reactivation', ranks = 2)
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 2)
+#
+my_metrics = metrics_from_file(inputfile='./metrics/filtered_react')
+my_metrics = metrics_from_file(inputfile='./metrics/filtered_react', ranks = 2)
+
+#promotion analysis, just priming english RCs
+comp = comparisons_from_file('./comparisons/priming/Priming-RCs-prom', directory='./trees/priming_rc_eng_prom/', metrics=my_metrics)
+
+#promotion analysis, all comparisons + priming RCs
+comp = comparisons_from_file('./comparisons/priming/All_RCs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+
+# Check
+comp.show()
+comp.table()
+

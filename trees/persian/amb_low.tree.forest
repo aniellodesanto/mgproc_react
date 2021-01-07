@@ -1,0 +1,28 @@
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[
+					VP
+					[DP
+					[daughter]
+						[EzP
+							[-e]
+							[CP,name=RelH
+								[C'
+									[that]
+									[TP,name=ETP
+										[T'
+										[T]
+										[\emph{v}P
+										[actor,name=Relsub]
+											[\emph{v}',name=Ev'
+												[VP
+													[PP
+														[on]
+														[the balcony]
+													]
+												[was,name=EV
+												]]]]]]]]]][saw,name=MV]]]]]]]]

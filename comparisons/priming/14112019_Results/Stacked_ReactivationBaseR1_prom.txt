@@ -1,0 +1,97 @@
+{'failure': ['MaxBTSsort_',
+             'SumR_',
+             "SumBP'_",
+             "MaxBTS'_",
+             'AvgR_',
+             "AvgBP'_",
+             "SumBTS'_",
+             'MaxRsort_',
+             "MaxBPsort'_",
+             "AvgBTS'_",
+             "MaxBTSsort'_",
+             "SumR'_",
+             'MaxRP_',
+             'MaxBS_',
+             "AvgR'_",
+             'SumBS_',
+             "MaxRsort'_",
+             'AvgBS_',
+             'MaxBT_',
+             'MaxBSsort_',
+             'SumBT_',
+             'SumRP_',
+             "MaxBS'_",
+             'AvgBT_',
+             "SumBS'_",
+             'MaxBTsort_',
+             "AvgBS'_",
+             'AvgRP_',
+             "MaxBT'_",
+             'MaxRPsort_',
+             'MaxBSsort_',
+             "SumBT'_",
+             'MaxBP_',
+             "AvgBT'_",
+             "SumRP'_",
+             'SumBP_',
+             "MaxBYsort'_",
+             "AvgRP'_",
+             'AvgBP_',
+             'MaxBTS_',
+             "MaxRPsort'_",
+             'MaxBPsort_',
+             'SumBTS_',
+             "MaxBP'_",
+             'AvgBTS_'],
+ 'success': [],
+ 'tie': ["MaxRP'_", "MaxR'_", 'MaxR_']}
+| Metric      | Filters   | eng-thatClause-oo-so-prom   | eng-thatClause-ss-os-prom   | chn-oo-so-prom   | chn-ss-os-prom   |
+|-------------+-----------+-----------------------------+-----------------------------+------------------+------------------|
+| AvgBP       |           | No                          | Yes                         | Yes              | No               |
+| AvgBP'      |           | No                          | Yes                         | Yes              | No               |
+| AvgBS       |           | No                          | Yes                         | Yes              | No               |
+| AvgBS'      |           | No                          | Yes                         | Yes              | No               |
+| AvgBT       |           | Yes                         | Yes                         | Yes              | No               |
+| AvgBT'      |           | No                          | Yes                         | Yes              | No               |
+| AvgBTS      |           | Yes                         | Yes                         | Yes              | No               |
+| AvgBTS'     |           | No                          | Yes                         | Yes              | No               |
+| AvgR        |           | No                          | No                          | Yes              | No               |
+| AvgR'       |           | No                          | Yes                         | No               | Yes              |
+| AvgRP       |           | Yes                         | No                          | Yes              | No               |
+| AvgRP'      |           | No                          | Yes                         | No               | Yes              |
+| MaxBP       |           | No                          | Yes                         | Yes              | No               |
+| MaxBP'      |           | No                          | Yes                         | Yes              | No               |
+| MaxBPsort   |           | No                          | Yes                         | Yes              | No               |
+| MaxBPsort'  |           | No                          | Yes                         | Yes              | No               |
+| MaxBS       |           | Tie                         | Tie                         | No               | Yes              |
+| MaxBS'      |           | Tie                         | Tie                         | No               | Yes              |
+| MaxBSsort   |           | No                          | Yes                         | No               | Yes              |
+| MaxBSsort   |           | No                          | Yes                         | No               | Yes              |
+| MaxBT       |           | Tie                         | Yes                         | Yes              | No               |
+| MaxBT'      |           | Tie                         | Yes                         | Yes              | No               |
+| MaxBTS      |           | Tie                         | Yes                         | Yes              | No               |
+| MaxBTS'     |           | Tie                         | Yes                         | Yes              | No               |
+| MaxBTSsort  |           | No                          | Yes                         | Yes              | No               |
+| MaxBTSsort' |           | No                          | Yes                         | Yes              | No               |
+| MaxBTsort   |           | No                          | Yes                         | Yes              | No               |
+| MaxBYsort'  |           | No                          | Yes                         | Yes              | No               |
+| MaxR        |           | Tie                         | Tie                         | Tie              | Tie              |
+| MaxR'       |           | Tie                         | Tie                         | Tie              | Tie              |
+| MaxRP       |           | Tie                         | Tie                         | Yes              | No               |
+| MaxRP'      |           | Tie                         | Tie                         | Tie              | Yes              |
+| MaxRPsort   |           | No                          | Yes                         | Yes              | No               |
+| MaxRPsort'  |           | No                          | Yes                         | No               | Yes              |
+| MaxRsort    |           | No                          | Yes                         | Yes              | No               |
+| MaxRsort'   |           | No                          | Yes                         | No               | Yes              |
+| SumBP       |           | No                          | Yes                         | Yes              | No               |
+| SumBP'      |           | No                          | Yes                         | Yes              | No               |
+| SumBS       |           | No                          | Yes                         | No               | Yes              |
+| SumBS'      |           | No                          | Yes                         | Yes              | No               |
+| SumBT       |           | No                          | Yes                         | Yes              | No               |
+| SumBT'      |           | No                          | Yes                         | Yes              | No               |
+| SumBTS      |           | No                          | Yes                         | Yes              | No               |
+| SumBTS'     |           | No                          | Yes                         | Yes              | No               |
+| SumR        |           | No                          | Yes                         | No               | Yes              |
+| SumR'       |           | No                          | Yes                         | No               | Yes              |
+| SumRP       |           | No                          | Yes                         | Yes              | No               |
+| SumRP'      |           | No                          | Yes                         | No               | Yes              |

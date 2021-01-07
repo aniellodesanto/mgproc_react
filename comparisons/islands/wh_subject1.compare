@@ -1,0 +1,15 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+LongNoIsland-vs-LongIsland ;  ; longNOI ; longYESI ;
+#
+ShortNoIsland-vs-ShortIsland ;  ; shortNOI ; shortYESI ;  
+#
+ShortNoIsland-vs-LongNoIsland ;  ; shortNOI ; longNOI ; 
+#
+ShortNoIsland-vs-LongIsland ;  ; shortNOI ; longYESI ; 
+#
+ShortIsland-vs-LongIsland ;  ; shortYESI ; longYESI ;   
+#
+ShortIsland-vs-LongNoIsland ;  ; shortYESI ; longNOI ;   

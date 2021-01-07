@@ -1,0 +1,423 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+% indexed node labels in trees;
+% these macros are only needed if you want to use the output of the .fprint method
+\newcommand{\Lab}[3]{\tsp{#2}#1\tsb{#3}} % for normal nodes
+\newcommand{\BLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed leaves
+\newcommand{\IBLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed interior nodes
+
+
+
+\begin{document}
+
+%Short/Non Island
+%Who __ thinks that the lawyer forgot his briefcase at the office?
+1) Short/Non Island
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[C1]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[who, name=who]
+					[$v$',
+						[$v1$]
+						[VP,
+							[thinks]
+							[CP,
+								[that]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+										[$v$P,
+											[DP, name = subj
+												[the]
+												[lawyer]
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[forgot]
+													[DP,
+													[his]
+													[briefcase]
+													]
+												]
+											]
+										]																[PP,
+									[at]
+									[DP,
+										[the]
+										[office]
+								]	
+								]
+									]
+								]							
+							]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom},non-final] (who)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (who)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+\newpage
+%Long/Non Island
+%What do you think that the lawyer forgot ___ at the office?
+2) Long/Non Island
+
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[do]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[you, name=MatrixSubj]
+					[$v$',
+						[$v1$]
+						[VP,
+							[think]
+							[CP, name=CPembedded
+								[C',
+								[that]
+								[TP, name= TPembedded
+									[T',
+										[T2]
+										[$v$P,
+										[$v$P,
+											[DP, name = subj
+												[the]
+												[lawyer]
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[forgot]
+													[what, name= what
+													]
+												]
+											]
+										]																[PP,
+									[at]
+									[DP,
+										[the]
+										[office]
+								]								
+								]
+								]
+									]
+								]
+							]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom}] (MatrixSubj)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh},non-final] (what)      .. controls +(120:6em) and +(220:4em) .. (CPembedded);
+\draw[move = {wh}] (what)      .. controls +(220:14em) and +(220:14em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+\newpage
+%Short/Island
+3)Short/Island
+%Who __ worries if the lawyer forgets his briefcase at the office?
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[C1]
+		[TP,
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[who, name=who]
+					[$v$',
+						[$v1$]
+						[worries
+						]
+					]
+				]
+			]
+		]
+		[CP,
+								[if]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+										[$v$P,
+											[DP, name = subj
+												[the]
+												[lawyer]
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[forgets]
+													[DP,
+													[his]
+													[briefcase]
+													]
+												]
+											]
+										]													[PP,
+									[at]
+									[DP,
+										[the]
+										[office]
+								]
+								]
+									]
+								]								
+							]
+							]
+	]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom},non-final] (who)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (who)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+%Long/ Island
+\newpage
+%Long/Non Island
+%What do you worry if  the lawyer forgets ___ at the office?
+4) Long/ Island
+
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[do]
+		[TP,
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[you, name=MatrixSubj]
+					[$v$',
+						[$v1$]
+						[worry]
+					]
+				]
+			]
+		]
+		[CP, name=CPembedded
+								[C',
+								[if]
+								[TP, name= TPembedded
+									[T',
+										[T2]
+										[$v$P,
+										[$v$P,
+											[DP, name = subj
+												[the]
+												[lawyer]
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[forgets]
+													[what, name= what
+													]
+												]
+											]
+										]
+									[PP,
+									[at]
+									[DP,
+										[the]
+										[office]
+								]								
+								]
+									]
+									]
+								]
+							]
+							]
+							]
+	]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom}] (MatrixSubj)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh},non-final] (what)      .. controls +(120:6em) and +(220:4em) .. (CPembedded);
+\draw[move = {wh}] (what)      .. controls +(220:14em) and +(220:14em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+
+%Long/ Island
+\newpage
+%Long/Non Island  (no intermediate movement)
+%What do you worry if  the lawyer forgets ___ at the office?
+4) Long/ Island (no intermediate movement)
+
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[do]
+		[TP,
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[you, name=MatrixSubj]
+					[$v$',
+						[$v1$]
+						[worry]
+					]
+				]
+			]
+		]
+		[CP, name=CPembedded
+								[if]
+								[TP, name= TPembedded
+									[T',
+										[T2]
+										[$v$P,
+										[$v$P,
+											[DP, name = subj
+												[the]
+												[lawyer]
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[forgets]
+													[what, name= what
+													]
+												]
+											]
+										]
+										[PP,
+									[at]
+									[DP,
+										[the]
+										[office]
+									]
+								]								
+								]
+								]
+								]
+						]
+	]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom}] (MatrixSubj)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (what)      .. controls +(220:14em) and +(220:14em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+
+%%%%%%FIXING PP ADJUNCT ISSUE
+
+1) Short/Non Island
+\begin{forest}
+[CP, name=CPmatrix
+	[C',
+		[C1]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[who, name=who]
+					[$v$',
+						[$v1$]
+						[VP,
+							[thinks]
+							[CP,
+								[that]
+								[TP,
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[$v$P,
+											[DP, name = subj
+												[the]
+												[lawyer]
+											]
+											[$v$',
+												[$v2$]
+												[VP,
+													[forgot]
+													[DP,
+													[his]
+													[briefcase]
+													]
+												]
+											]
+										]
+									]
+								]
+								[PP,
+									[at]
+									[DP,
+										[the]
+										[office]
+								]								
+								]
+							]
+							]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+\draw[move = {nom}] (subj)      .. controls +(120:6em) and +(220:4em) .. (TPembedded);
+\draw[move = {nom},non-final] (who)      .. controls +(120:6em) and +(220:4em) .. (TPmatrix);
+\draw[move = {wh}] (who)      .. controls +(120:6em) and +(220:4em) .. (CPmatrix);
+%%%%%%%%%%%%%%%
+% Annotations %
+%%%%%%%%%%%%%%%
+\end{forest}
+
+
+\end{document}

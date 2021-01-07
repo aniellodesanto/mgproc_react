@@ -1,0 +1,5 @@
+\draw[-{Latex[length=.5em]},move={nom}] (subjMain) to[out = west, in = south west] (subjMainLanding);
+\draw[-{Latex[length=.5em]},move={rel}] (CP1) to[out= west,in=south west] (CP2);
+\draw[-{Latex[length=.5em]},move={nom}] (subjectHigher) to[out= west,in=south west] (subjectHigherLanding);
+\draw[-{Latex[length=.5em]},move={rel}] (hd) to[out= west,in=south west] (CP1);
+\draw[-{Latex[length=.5em]},move={nom}] (subjectLower) to[out= west,in=south west] (subjectLowerLanding);

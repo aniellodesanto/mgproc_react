@@ -1,0 +1,15 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+stacked_eng-thatClause-oo-so-prom ;  ; stacked_prom_post_oo ; stacked_prom_post_so ; 
+stacked_eng-thatClause-ss-os-prom ;  ; stacked_prom_post_ss ; stacked_prom_post_os ; 
+stacked_chn-oo-so-prom            ;  ; stacked_prom_pre_oo  ; stacked_prom_pre_so  ; 
+stacked_chn-ss-os-prom            ;  ; stacked_prom_pre_ss  ; stacked_prom_pre_os  ; 
+#
+#priming
+eng-oo-so-prom ;  ; priming_prom_eng_oo ; priming_prom_eng_so ; 
+eng-ss-os-prom ;  ; priming_prom_eng_ss ; priming_prom_eng_os ; 
+#I am saying ss >> oo, but they should tie on the following
+#eng-ss-oo-prom ;  ; priming_prom_eng_ss ; priming_prom_eng_oo ; 
+

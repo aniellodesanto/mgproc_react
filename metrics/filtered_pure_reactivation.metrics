@@ -1,0 +1,91 @@
+# General format:
+# name; LaTeX command; load_type; operator; trivial; filter; function
+#
+#
+# reactivation based, reactivation_plain,  trivial is ignored
+#
+MaxRP  ;   ; reactP  ; safemax
+SumRP  ;   ; reactP  ; sum
+AvgRP  ;   ; reactP  ; avg
+MaxRPsort;  ; reactP  ; sorted 
+#
+# reactivation based, reactivation_plain, trivial is not ignored
+#
+MaxRP'  ;   ; reactP  ; safemax; trivial
+SumRP'  ;   ; reactP  ; sum; trivial
+AvgRP'  ;   ; reactP  ; avg; trivial
+MaxRPsort';  ; reactP  ; sorted ; trivial
+#
+# reactivation based, reactivation_extract, trivial is ignored
+#
+MaxR  ;   ; react  ; safemax
+SumR  ;   ; react  ; sum
+AvgR  ;   ; react  ; avg
+MaxRsort;  ; react  ; sorted 
+#
+# reactivation based, trivial is not ignored
+#
+MaxR'  ;   ; react  ; safemax; trivial
+SumR'  ;   ; react  ; sum; trivial
+AvgR'  ;   ; react  ; avg; trivial
+MaxRsort';  ; react  ; sorted; trivial 
+#
+#
+# reactivation based, boostT_extract, trivial is ignored
+#
+MaxBT  ;   ; boostT  ; safemax; ; I, U, P, *
+SumBT  ;   ; boostT  ; sum; ; I, U, P, *
+AvgBT  ;   ; boostT  ; avg; ; I, U, P, *
+MaxBTsort;  ; boostT  ; sorted; ; I, U, P, *
+#
+# reactivation based, trivial is not ignored
+#
+MaxBT'  ;   ; boostT  ; safemax; trivial;  I, U, P, *
+SumBT'  ;   ; boostT  ; sum; trivial;  I, U, P, *
+AvgBT'  ;   ; boostT  ; avg; trivial;  I, U, P, *
+MaxBYsort';  ; boostT  ; sorted; trivial; I, U, P, *
+#
+#
+# boost based,  boostTS_extract, trivial is ignored
+#
+MaxBTS  ;   ; boostTS  ; safemax; ; I, U, P, *
+SumBTS ;   ; boostTS  ; sum; ; I, U, P, *
+AvgBTS  ;   ; boostTS  ; avg; ; I, U, P, *
+MaxBTSsort;  ; boostTS  ; sorted; ; I, U, P, * 
+#
+# boost based,  boostTS_extract, trivial is not ignored
+#
+MaxBTS'  ;   ; boostTS  ; safemax; trivial;  I, U, P, *
+SumBTS' ;   ; boostTS ; sum; trivial;  I, U, P, *
+AvgBTS'  ;   ; boostTS  ; avg; trivial;  I, U, P, *
+MaxBTSsort';  ;  boostTS ; sorted; trivial;  I, U, P, *
+#
+#
+# boost based,  boost_size_extract, trivial is ignored
+#
+MaxBS  ;   ; boostS  ; safemax
+SumBS  ;   ; boostS  ; sum
+AvgBS  ;   ; boostS  ; avg
+MaxBSsort;  ; boostS  ; sorted
+#
+# boost based, trivial is not ignored
+#
+MaxBS'  ;   ; boostS  ; safemax; trivial
+SumBS' ;   ; boostS  ; sum; trivial
+AvgBS'  ;   ; boostS  ; avg; trivial
+MaxBSsort;'  ; boostS  ; sorted; trivial 
+#
+# boost based,  boost_extract_plain, trivial is ignored
+#
+#MaxBP  ;   ; boostP  ; safemax
+#SumBP  ;   ; boostP  ; sum
+#AvgBP  ;   ; boostP  ; avg
+#MaxBPsort;  ; boostP  ; sorted
+#
+# boost based, trivial is not ignored
+#
+#MaxBP'  ;   ; boostP  ; safemax; trivial
+#SumBP' ;   ; boostP  ; sum; trivial
+#AvgBP'  ;   ; boostP  ; avg; trivial
+#MaxBPsort';  ; boostP  ; sorted; trivial 
+#

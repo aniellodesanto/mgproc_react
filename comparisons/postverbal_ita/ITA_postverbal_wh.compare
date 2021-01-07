@@ -1,0 +1,8 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+#wh word: prev vs post
+ita-postverbal-whW-prev-postv;  ; whW_subjPre ; whW_subjPost ; 
+#wh phrase: post vs prev
+ita-postverbal-whP-postv-prev;  ; whP_subjPost ; whP_subjPre ; 

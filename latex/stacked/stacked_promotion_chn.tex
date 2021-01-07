@@ -1,0 +1,56 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+% indexed node labels in trees;
+% these macros are only needed if you want to use the output of the .fprint method
+\newcommand{\Lab}[3]{\tsp{#2}#1\tsb{#3}} % for normal nodes
+\newcommand{\BLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed leaves
+\newcommand{\IBLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed interior nodes
+
+
+
+\begin{document}
+
+%Short/Non Island
+%Who thinks the speech interrupted the show?
+
+1) stacked prom  pre oo
+
+\begin{center}
+\input{./stacked_prom_pre_oo.io.mgproc.forest}
+\end{center}
+
+\newpage
+2) stacked prom pre os
+\begin{center}
+\input{./stacked_prom_pre_os.io.mgproc.forest}
+\end{center}
+
+\newpage
+3) stacked prom pre so
+\begin{center}
+\input{./stacked_prom_pre_so.io.mgproc.forest}
+\end{center}
+
+\newpage
+4) stacked prom pre ss
+\begin{center}
+\input{./stacked_prom_pre_ss.io.mgproc.forest}
+\end{center}
+
+
+\end{document}

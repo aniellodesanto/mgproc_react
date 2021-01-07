@@ -1,0 +1,40 @@
+python3 -i __init__.py
+#
+#
+mytree = tree_from_file('trees/islands/complexNP/shortNOI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/complexNP/shortNOI')
+ioprint(mytree, filename='trees/islands/complexNP/shortNOI')
+texprint(mytree, filename='shortNOI_annotated', tree_directory='./trees/islands/complexNP/')
+
+
+mytree = tree_from_file('trees/islands/complexNP/longNOI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/complexNP/longNOI')
+ioprint(mytree, filename='trees/islands/complexNP/longNOI')
+texprint(mytree, filename='longNOI_annotated', tree_directory='./trees/islands/complexNP/')
+
+
+mytree = tree_from_file('trees/islands/complexNP/shortYESI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/complexNP/shortYESI')
+ioprint(mytree, filename='trees/islands/complexNP/shortYESI')
+texprint(mytree, filename='shortYESI_annotated', tree_directory='./trees/islands/complexNP/')
+
+
+mytree = tree_from_file('trees/islands/complexNP/longYESI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/islands/complexNP/longYESI')
+ioprint(mytree, filename='trees/islands/complexNP/longYESI')
+texprint(mytree, filename='longYESI_annotated', tree_directory='./trees/islands/complexNP/')
+
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/islands/wh_complexNP', directory='./trees/islands/complexNP/', metrics=my_metrics)
+
+# Check
+comp.show()
+comp.table()
+
+~

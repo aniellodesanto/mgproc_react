@@ -1,0 +1,103 @@
+[ConjP
+[CP
+    [C, empty]
+    [TP, name=TPmatrix1
+        [T$'$
+            [T, empty]
+            [$v$P
+               [DP, name=DP1
+                    [the]
+                    [NP, name=RC1target
+                        [N$'$
+                            [who]
+                            [TP, name=TP1
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=DP1subj
+                                            [the]
+                                            [senator]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [attacked]
+                                                [DP, name=RC1source
+                                                    [D, empty]
+                                                    [reporter]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                [$v'$
+                    [$v$, empty]
+                    [VP
+                        [admitted]
+                        [DP
+                            [the]
+                            [error]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+[Conj$'$
+		[and]
+		[CP
+    [C, empty]
+    [TP, name=TPmatrix2
+        [T$'$
+            [T, empty]
+            [$v$P
+                [DP, name=DP2
+                    [the]
+                    [NP, name=RC2target
+                        [N$'$
+                            [who]
+                            [TP, name=TP2
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=DP2subj
+                                            [D,empty]
+                                            [actor]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [attacked]
+                                                [DP
+                                                    [the]
+                                                    [photographer]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]%
+                   [$v'$
+                    [$v$, empty]
+                    [VP
+                        [admitted]
+                        [DP
+                            [the]
+                            [error]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+]
+]

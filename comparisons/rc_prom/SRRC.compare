@@ -1,0 +1,5 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+scrc-rcsc-prom ;  ; scrc_prom      ; rcsc_prom       ; 

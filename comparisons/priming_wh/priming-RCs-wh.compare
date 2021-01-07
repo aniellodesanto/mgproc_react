@@ -1,0 +1,8 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+eng-oo-so-wh ;  ; priming_wh_eng_oo ; priming_wh_eng_so ; 
+eng-ss-os-wh ;  ; priming_wh_eng_ss ; priming_wh_eng_os ; 
+#I am saying ss >> oo, but they should tie on the following
+#eng-ss-oo-wh ;  ; priming_wh_eng_ss ; priming_wh_eng_oo ; 
+

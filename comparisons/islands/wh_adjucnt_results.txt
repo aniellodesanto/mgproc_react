@@ -1,0 +1,35 @@
+{'failure': ['AvgT_',
+             "AvgT'_",
+             'MaxSR_',
+             "MaxSR'_",
+             'MaxS_',
+             'SumT_',
+             "MaxS'_",
+             "SumT'_",
+             'BoxT_',
+             "BoxT'_"],
+ 'success': ['AvgS_', 'MaxTR_', "AvgS'_", "MaxTR'_", 'SumS_', "SumS'_"],
+ 'tie': ["MaxT'_", 'Movers_', "Movers'_", 'MaxT_']}
+
+| Metric   | Filters   | noILong-vs-ILong   | noIShort-vs-IShort   | noIShort-vs-noILong   | IShort-vs-ILong   | noIShort-vs-ILong   |
+|----------+-----------+--------------------+----------------------+-----------------------+-------------------+---------------------|
+| AvgS     |           | Yes                | Yes                  | Yes                   | Yes               | Yes                 |
+| AvgS'    |           | Yes                | Yes                  | Yes                   | Yes               | Yes                 |
+| AvgT     |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| AvgT'    |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| BoxT     |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| BoxT'    |           | Tie                | Tie                  | No                    | No                | No                  |
+| MaxS     |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| MaxS'    |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| MaxSR    |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| MaxSR'   |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| MaxT     |           | Yes                | Tie                  | Yes                   | Yes               | Yes                 |
+| MaxT'    |           | Yes                | Tie                  | Yes                   | Yes               | Yes                 |
+| MaxTR    |           | Yes                | Yes                  | Yes                   | Yes               | Yes                 |
+| MaxTR'   |           | Yes                | Yes                  | Yes                   | Yes               | Yes                 |
+| Movers   |           | Yes                | Tie                  | Tie                   | Yes               | Yes                 |
+| Movers'  |           | Yes                | Tie                  | Tie                   | Yes               | Yes                 |
+| SumS     |           | Yes                | Yes                  | Yes                   | Yes               | Yes                 |
+| SumS'    |           | Yes                | Yes                  | Yes                   | Yes               | Yes                 |
+| SumT     |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |
+| SumT'    |           | No                 | Yes                  | Yes                   | Yes               | Yes                 |

@@ -1,0 +1,161 @@
+python3 -i __init__.py
+
+
+#Original Metrics
+my_metrics = metrics_from_file(inputfile='./metrics/base',ranks=2)
+
+#original filtered
+my_metrics = metrics_from_file(inputfile='./metrics/filtered')
+my_metrics = metrics_from_file(inputfile='./metrics/filtered', ranks = 2)
+
+#New Metrics
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation')
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation', ranks = 2)
+
+#New + Old
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation')
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 2)
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 3)
+
+
+#Filtered with reactivation metrics
+my_metrics = metrics_from_file(inputfile='./metrics/filtered_react')
+#filters on old base metrics
+my_metrics = metrics_from_file(inputfile='./metrics/filtered_react', ranks = 2)
+#no old metrics
+my_metrics = metrics_from_file(inputfile='./metrics/filtered_pure_reactivation', ranks = 2)
+
+
+
+####Comparisons
+
+##COMPARE ALL No stacked
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_prom/AllSingleRCs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/AllSingleRCs', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+
+
+#Compare Stacked
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_prom/Stacked-RCs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/Stacked-RCs', directory='./trees/rc_wh_feat2/', metrics=my_metrics)
+
+
+
+#COMPARE ALL with Stacked
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_prom/All_RCs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/All_RCs', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+
+#COMPARE Priming
+
+#promotion analysis, big subj conjunct
+comp = comparisons_from_file('./comparisons/priming/priming-RCs-prom', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#promotion analysis, Priming2 (separate sentences)
+comp = comparisons_from_file('./comparisons/priming/priming-RCs-prom', directory='./trees/rc_prom_feat2/', metrics=my_metrics)
+
+
+#wh analysis, Priming2 (separate sentences)
+comp = comparisons_from_file('./comparisons/priming_wh/priming-RCs-wh', directory='./trees/rc_wh_feat2/', metrics=my_metrics)
+
+
+#COMPARE Stacked and priming
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/priming/Stacked-Priming-Rcs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/priming/Stacked-Priming-Rcs', directory='./trees/rc_prom_feat2/', metrics=my_metrics)
+
+#wh analysis (primin2)
+comp = comparisons_from_file('./comparisons/priming_wh/Stacked-Priming-Rcs', directory='./trees/rc_wh_feat2/', metrics=my_metrics)
+
+
+#COMPARE ALL with Priming (no stacked)
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/priming/Priming_All_RCs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#promotion analysis, Priming 2
+comp = comparisons_from_file('./comparisons/priming/Priming_All_RCs', directory='./trees/rc_prom_feat2/', metrics=my_metrics)
+
+#wh analysis, Priming 2
+comp = comparisons_from_file('./comparisons/priming_wh/Priming_All_RCs', directory='./trees/rc_wh_feat2/', metrics=my_metrics)
+
+
+#COMPARE ALL with Stacked and priming
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/priming/All_RCs', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/priming/All_RCs', directory='./trees/rc_prom_feat2/', metrics=my_metrics)
+
+#wh analysis, priming 2
+comp = comparisons_from_file('./comparisons/priming_wh/All_RCs', directory='./trees/rc_wh_feat2/', metrics=my_metrics)
+
+
+#COMPARE ALL SRC and ORC with Stacked (no center embedding, no srrc)
+#promotion analysis 
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 2)
+comp = comparisons_from_file('./comparisons/rc_prom/SRC-ORC-stacked', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/SRC-ORC-stacked', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+##COMPARE SINGLE CONSTRUCTIONS
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation', ranks = 2)
+
+#Center vs Right Embedding
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_prom/Right-Center_ORC', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/Right-Center_ORC', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+
+#SRRC
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_prom/SRRC', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/SRRC', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+
+
+#SRC vs ORC
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_prom/SRC-ORC', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+comp = comparisons_from_file('./comparisons/rc_prom/SRC-ORC', directory='./trees/rc_prom/', metrics=my_metrics)
+
+
+comp = comparisons_from_file('./comparisons/rc_prom/SRC-ORC', directory='./trees/rc_prom_feat_RA_ident/', metrics=my_metrics)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_wh/SRC-ORC', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+
+# Check
+comp.show()
+comp.table()
+
+# Write results to file
+import sys
+sys.stdout = open('Stacked_wh_ReactivationRank1.txt','w')
+comp.show()
+comp.table()
+sys.stdout.close()

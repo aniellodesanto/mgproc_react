@@ -1,0 +1,138 @@
+python3 -i __init__.py
+#
+#
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation')
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation')
+my_metrics = metrics_from_file(inputfile='./metrics/base_reactivation', ranks = 2)
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 2)
+
+my_metrics = metrics_from_file(inputfile='./metrics/reactivation', ranks = 2)
+my_metrics = metrics_from_file(inputfile='./metrics/full_reactivation', ranks = 2)
+
+#wh analysis
+comp = comparisons_from_file('./comparisons/rc_stacked_features/Stacked-RCs', directory='./trees/rc_wh_feat/', metrics=my_metrics)
+
+#promotion analysis
+comp = comparisons_from_file('./comparisons/rc_stacked_features/Stacked-RCs-prom', directory='./trees/rc_prom_feat/', metrics=my_metrics)
+
+# Check
+comp.show()
+comp.table()
+
+mytree_src = tree_from_file('trees/rc_prom/eng_src_prom')
+mytree_orc = tree_from_file('trees/rc_prom/eng_orc_prom')
+
+#
+mytree_oo = tree_from_file('trees/rc_prom_feat2/stacked_prom_pre_oo')
+mytree_os = tree_from_file('trees/rc_prom_feat2/stacked_prom_pre_os')
+mytree_so = tree_from_file('trees/rc_prom_feat2/stacked_prom_pre_so')
+mytree_ss = tree_from_file('trees/rc_prom_feat2/stacked_prom_pre_ss')
+
+#
+mytree_oo = tree_from_file('trees/rc_prom_feat2/stacked_prom_post_oo')
+mytree_os = tree_from_file('trees/rc_prom_feat2/stacked_prom_post_os')
+mytree_so = tree_from_file('trees/rc_prom_feat2/stacked_prom_post_so')
+mytree_ss = tree_from_file('trees/rc_prom_feat2/stacked_prom_post_ss')
+
+#
+mytree_oo = tree_from_file('trees/rc_prom_feat/priming_prom_eng_oo')
+mytree_os = tree_from_file('trees/rc_prom_feat/priming_prom_eng_so')
+mytree_so = tree_from_file('trees/rc_prom_feat/priming_prom_eng_os')
+mytree_ss = tree_from_file('trees/rc_prom_feat/priming_prom_eng_ss')
+
+
+#
+mytree_oo = tree_from_file('trees/rc_prom_feat2/priming_prom_eng_oo')
+mytree_os = tree_from_file('trees/rc_prom_feat2/priming_prom_eng_so')
+mytree_so = tree_from_file('trees/rc_prom_feat2/priming_prom_eng_os')
+mytree_ss = tree_from_file('trees/rc_prom_feat2/priming_prom_eng_ss')
+
+
+#
+mytree_oo = tree_from_file('trees/rc_wh_feat2/stacked_wh_pre_oo')
+mytree_os = tree_from_file('trees/rc_wh_feat2/stacked_wh_pre_os')
+mytree_so = tree_from_file('trees/rc_wh_feat2/stacked_wh_pre_so')
+mytree_ss = tree_from_file('trees/rc_wh_feat2/stacked_wh_pre_ss')
+
+#
+mytree_oo = tree_from_file('trees/rc_wh_feat2/stacked_wh_that_post_oo')
+mytree_os = tree_from_file('trees/rc_wh_feat2/stacked_wh_that_post_os')
+mytree_so = tree_from_file('trees/rc_wh_feat2/stacked_wh_that_post_so')
+mytree_ss = tree_from_file('trees/rc_wh_feat2/stacked_wh_that_post_ss')
+
+
+#
+mytree_oo = tree_from_file('trees/rc_wh_feat2/priming_wh_eng_oo')
+mytree_os = tree_from_file('trees/rc_wh_feat2/priming_wh_eng_so')
+mytree_so = tree_from_file('trees/rc_wh_feat2/priming_wh_eng_os')
+mytree_ss = tree_from_file('trees/rc_wh_feat2/priming_wh_eng_ss')
+
+#
+mytree_oo = tree_from_file('trees/rc_stacked_feat/stacked_wh_that_post_oo')
+mytree_os = tree_from_file('trees/rc_stacked_feat/stacked_wh_that_post_os')
+mytree_so = tree_from_file('trees/rc_stacked_feat/stacked_wh_that_post_so')
+mytree_ss = tree_from_file('trees/rc_stacked_feat/stacked_wh_that_post_ss')
+
+
+memory_measure(mytree_oo, load_type='reactP', operator = sorted)
+memory_measure(mytree_so, load_type='reactP', operator = sorted)
+memory_measure(mytree_os, load_type='reactP', operator = sorted)
+memory_measure(mytree_ss, load_type='reactP', operator = sorted)
+
+memory_measure(mytree_oo, load_type='tenure', operator = avg)
+memory_measure(mytree_so, load_type='tenure', operator = avg)
+memory_measure(mytree_os, load_type='tenure', operator = avg)
+memory_measure(mytree_ss, load_type='tenure', operator = avg)
+
+memory_measure(mytree_oo, load_type='boostT', operator = max)
+memory_measure(mytree_so, load_type='boostT', operator = max)
+memory_measure(mytree_os, load_type='boostT', operator = max)
+memory_measure(mytree_ss, load_type='boostT', operator = max)
+
+memory_measure(mytree_oo, load_type='boostT', operator = avg)
+memory_measure(mytree_so, load_type='boostT', operator = avg)
+memory_measure(mytree_os, load_type='boostT', operator = avg)
+memory_measure(mytree_ss, load_type='boostT', operator = avg)
+
+memory_measure(mytree_oo, load_type='boostTS', operator = avg)
+memory_measure(mytree_so, load_type='boostTS', operator = avg)
+memory_measure(mytree_os, load_type='boostTS', operator = avg)
+memory_measure(mytree_ss, load_type='boostTS', operator = avg)
+
+memory_measure(mytree_oo, load_type='reactP', operator = max, trivial=True)
+memory_measure(mytree_so, load_type='reactP', operator = max, trivial=True)
+memory_measure(mytree_os, load_type='reactP', operator = max, trivial=True)
+memory_measure(mytree_ss, load_type='reactP', operator = max, trivial=True)
+
+memory_measure(mytree_os, load_type='react', operator = sum, trivial=True)
+memory_measure(mytree_ss, load_type='react', operator = sum, trivial=True)
+
+memory_measure(mytree_oo, load_type='boost', operator=sum)
+memory_measure(mytree_oo, load_type='size', operator=sum)
+memory_measure(mytree_os, load_type='boost', operator=sum)
+memory_measure(mytree_os, load_type='size', operator=sum)
+memory_measure(mytree_so, load_type='boost', operator=sum)
+memory_measure(mytree_so, load_type='size', operator=sum)
+memory_measure(mytree_ss, load_type='boost', operator=sum)
+memory_measure(mytree_ss, load_type='size', operator=sum)
+
+memory_measure(mytree_oo, load_type='boosti')
+memory_measure(mytree_os, load_type='boosti')
+memory_measure(mytree_so, load_type='boosti')
+memory_measure(mytree_ss, load_type='boosti')
+
+memory_measure(mytree_oo, load_type='react', operator=sum)
+memory_measure(mytree_os, load_type='react', operator=sum)
+memory_measure(mytree_so, load_type='react', operator=sum)
+memory_measure(mytree_ss, load_type='react', operator=sum)
+
+
+memory_measure(mytree_src, load_type='tenure', operator=max)
+memory_measure(mytree_orc, load_type='tenure', operator=max)
+
+
+ 'success': ["MaxBT' > AvgRP_>",
+             "MaxRT' > AvgT_>",
+             "MaxRT' > AvgRP_>",
+             "MaxBT' > AvgT_>"],

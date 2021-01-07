@@ -1,0 +1,33 @@
+[CP, name=CPmatrix
+	[C]
+	[TP, name=TP
+		[T',
+			[T]
+			[$v$P,
+				[DP, name=DPsubj
+					[the]
+					[girl]
+				]
+				[$v$',
+					[$v$]
+					[VP,
+						[VP,
+							[hits]
+							[DP,
+								[the]
+								[boy]
+							]
+						]
+						[PP,
+						[with]
+						[DP,
+							[the]
+							[paddle]
+						]
+						]
+					]
+				]
+			]
+		]
+	]
+]        

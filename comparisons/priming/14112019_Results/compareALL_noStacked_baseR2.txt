@@ -1,0 +1,803 @@
+{'failure': ["AvgT > AvgT'_>",
+             "AvgT' > SumS'_>",
+             "AvgT > MaxTR'_>",
+             "AvgT' > Movers'_>",
+             'AvgT > MaxS_>',
+             "AvgT' > AvgS'_>",
+             'AvgT > SumS_>',
+             "AvgT' > MaxSR'_>",
+             'AvgT > Movers_>',
+             "MaxTR' > MaxT_>",
+             'MaxT > SumT_>',
+             'AvgT > AvgS_>',
+             "MaxTR' > SumT_>",
+             'MaxT > BoxT_>',
+             'AvgT > MaxSR_>',
+             "MaxTR' > BoxT_>",
+             'MaxT > AvgT_>',
+             "AvgT > MaxS'_>",
+             "MaxTR' > AvgT_>",
+             'MaxT > MaxTR_>',
+             "AvgT > SumS'_>",
+             "MaxTR' > MaxTR_>",
+             "AvgT > Movers'_>",
+             "MaxTR' > MaxT'_>",
+             "MaxT > SumT'_>",
+             "AvgT > AvgS'_>",
+             "MaxTR' > SumT'_>",
+             "AvgT > MaxSR'_>",
+             "MaxTR' > BoxT'_>",
+             "MaxT > AvgT'_>",
+             'MaxTR > MaxT_>',
+             "MaxTR' > AvgT'_>",
+             "MaxT > MaxTR'_>",
+             'MaxTR > SumT_>',
+             "MaxTR' > MaxTR'_>",
+             'MaxT > MaxS_>',
+             'MaxTR > BoxT_>',
+             "MaxTR' > MaxS_>",
+             'MaxT > SumS_>',
+             'MaxTR > AvgT_>',
+             "MaxTR' > SumS_>",
+             'MaxT > Movers_>',
+             'MaxTR > MaxTR_>',
+             "MaxTR' > Movers_>",
+             'MaxT > AvgS_>',
+             "MaxTR > MaxT'_>",
+             "MaxTR' > AvgS_>",
+             'MaxT > MaxSR_>',
+             "MaxTR > SumT'_>",
+             "MaxTR' > MaxSR_>",
+             "MaxT > MaxS'_>",
+             "MaxTR > BoxT'_>",
+             "MaxTR' > MaxS'_>",
+             "MaxT > SumS'_>",
+             "MaxTR > AvgT'_>",
+             "MaxTR' > SumS'_>",
+             "MaxTR > MaxTR'_>",
+             "MaxTR' > Movers'_>",
+             "MaxT > AvgS'_>",
+             'MaxTR > MaxS_>',
+             "MaxTR' > AvgS'_>",
+             "MaxT > MaxSR'_>",
+             'MaxTR > SumS_>',
+             "MaxTR' > MaxSR'_>",
+             'SumT > MaxT_>',
+             'MaxS > MaxT_>',
+             'MaxTR > Movers_>',
+             'SumT > SumT_>',
+             'MaxS > SumT_>',
+             'MaxTR > AvgS_>',
+             'SumT > BoxT_>',
+             'MaxS > BoxT_>',
+             'MaxTR > MaxSR_>',
+             'SumT > AvgT_>',
+             'MaxS > AvgT_>',
+             "MaxTR > MaxS'_>",
+             'SumT > MaxTR_>',
+             'MaxS > MaxTR_>',
+             "MaxTR > SumS'_>",
+             "SumT > MaxT'_>",
+             "MaxS > MaxT'_>",
+             "MaxTR > Movers'_>",
+             "SumT > SumT'_>",
+             "MaxS > SumT'_>",
+             "MaxTR > AvgS'_>",
+             "SumT > BoxT'_>",
+             "MaxS > BoxT'_>",
+             "MaxTR > MaxSR'_>",
+             "SumT > AvgT'_>",
+             "MaxS > AvgT'_>",
+             "SumT > MaxTR'_>",
+             "MaxT' > SumT_>",
+             "MaxS > MaxTR'_>",
+             'SumT > MaxS_>',
+             "MaxT' > BoxT_>",
+             'MaxS > MaxS_>',
+             'SumT > SumS_>',
+             'MaxS > SumS_>',
+             "MaxT' > AvgT_>",
+             "SumS' > MaxT_>",
+             'MaxSR > MaxTR_>',
+             "Movers' > SumS'_>",
+             "SumS' > SumT_>",
+             "MaxSR > MaxT'_>",
+             "Movers' > Movers'_>",
+             "SumS' > BoxT_>",
+             "MaxSR > SumT'_>",
+             "Movers' > AvgS'_>",
+             "SumS' > AvgT_>",
+             "MaxSR > BoxT'_>",
+             "Movers' > MaxSR'_>",
+             "SumS' > MaxTR_>",
+             "MaxSR > AvgT'_>",
+             "AvgS' > MaxT_>",
+             "SumS' > MaxT'_>",
+             "MaxSR > MaxTR'_>",
+             "AvgS' > SumT_>",
+             "SumS' > SumT'_>",
+             'MaxSR > MaxS_>',
+             "AvgS' > BoxT_>",
+             "SumS' > BoxT'_>",
+             'MaxSR > SumS_>',
+             "AvgS' > AvgT_>",
+             "SumS' > AvgT'_>",
+             'MaxSR > Movers_>',
+             "AvgS' > MaxTR_>",
+             "SumS' > MaxTR'_>",
+             'MaxSR > AvgS_>',
+             "AvgS' > MaxT'_>",
+             "SumS' > MaxS_>",
+             'MaxSR > MaxSR_>',
+             "AvgS' > SumT'_>",
+             "SumS' > SumS_>",
+             "MaxSR > MaxS'_>",
+             "AvgS' > BoxT'_>",
+             "SumS' > Movers_>",
+             "MaxSR > SumS'_>",
+             "AvgS' > AvgT'_>",
+             "SumS' > AvgS_>",
+             "MaxSR > Movers'_>",
+             "AvgS' > MaxTR'_>",
+             "SumS' > MaxSR_>",
+             "MaxSR > AvgS'_>",
+             "AvgS' > MaxS_>",
+             "SumS' > MaxS'_>",
+             "MaxSR > MaxSR'_>",
+             "AvgS' > SumS_>",
+             "SumS' > SumS'_>",
+             "MaxS' > MaxT_>",
+             "AvgS' > Movers_>",
+             "SumS' > Movers'_>",
+             "MaxS' > SumT_>",
+             "AvgS' > AvgS_>",
+             "SumS' > AvgS'_>",
+             "MaxS' > BoxT_>",
+             "AvgS' > MaxSR_>",
+             "SumS' > MaxSR'_>",
+             "MaxS' > AvgT_>",
+             "AvgS' > MaxS'_>",
+             "Movers' > MaxT_>",
+             "MaxS' > MaxTR_>",
+             "AvgS' > SumS'_>",
+             "Movers' > SumT_>",
+             "MaxS' > MaxT'_>",
+             "AvgS' > Movers'_>",
+             "Movers' > BoxT_>",
+             "MaxS' > SumT'_>",
+             "AvgS' > AvgS'_>",
+             "Movers' > AvgT_>",
+             "MaxS' > BoxT'_>",
+             "AvgS' > MaxSR'_>",
+             "Movers' > MaxTR_>",
+             "MaxS' > AvgT'_>",
+             "MaxSR' > MaxT_>",
+             "Movers' > MaxT'_>",
+             "MaxS' > MaxTR'_>",
+             "MaxSR' > SumT_>",
+             "Movers' > SumT'_>",
+             "MaxS' > MaxS_>",
+             "MaxSR' > BoxT_>",
+             "Movers' > BoxT'_>",
+             "MaxS' > SumS_>",
+             "MaxSR' > AvgT_>",
+             "Movers' > AvgT'_>",
+             "MaxS' > Movers_>",
+             "MaxSR' > MaxTR_>",
+             "Movers' > MaxTR'_>",
+             "MaxS' > AvgS_>",
+             "MaxSR' > MaxT'_>",
+             "Movers' > MaxS_>",
+             "MaxS' > MaxSR_>",
+             "MaxSR' > SumT'_>",
+             "Movers' > SumS_>",
+             "MaxS' > MaxS'_>",
+             "MaxSR' > BoxT'_>",
+             "Movers' > Movers_>",
+             "MaxS' > SumS'_>",
+             "MaxSR' > AvgT'_>",
+             "Movers' > AvgS_>",
+             "MaxS' > Movers'_>",
+             "MaxSR' > MaxTR'_>",
+             "Movers' > MaxSR_>",
+             "MaxS' > AvgS'_>",
+             "MaxSR' > MaxS_>",
+             "Movers' > MaxS'_>",
+             "MaxSR' > SumS_>",
+             "MaxS' > MaxSR'_>",
+             "MaxSR' > Movers_>",
+             "MaxT' > MaxTR_>",
+             "MaxSR' > AvgS_>",
+             "MaxSR' > MaxSR_>",
+             "MaxT' > SumT'_>",
+             "MaxSR' > MaxS'_>",
+             "MaxSR' > SumS'_>",
+             "MaxT' > AvgT'_>",
+             "MaxSR' > Movers'_>",
+             "MaxT' > MaxTR'_>",
+             "MaxT' > MaxS_>",
+             "MaxSR' > AvgS'_>",
+             "MaxT' > SumS_>",
+             "MaxSR' > MaxSR'_>",
+             "MaxT' > Movers_>",
+             "MaxT' > AvgS_>",
+             "MaxT' > MaxSR_>",
+             "MaxT' > MaxS'_>",
+             "MaxT' > SumS'_>",
+             "MaxT' > AvgS'_>",
+             "MaxT' > MaxSR'_>",
+             "SumT' > MaxT_>",
+             "SumT' > SumT_>",
+             "SumT' > BoxT_>",
+             "SumT' > AvgT_>",
+             "SumT' > MaxTR_>",
+             "SumT' > MaxT'_>",
+             "AvgT > BoxT'_>",
+             "SumT' > SumT'_>",
+             "SumT' > BoxT'_>",
+             "SumT' > AvgT'_>",
+             "SumT' > MaxTR'_>",
+             "SumT' > MaxS_>",
+             "SumT' > SumS_>",
+             "SumT' > Movers_>",
+             "SumT' > AvgS_>",
+             "SumT' > MaxSR_>",
+             "SumT' > MaxS'_>",
+             "SumT' > SumS'_>",
+             "SumT' > Movers'_>",
+             "SumT' > AvgS'_>",
+             "SumT' > MaxSR'_>",
+             'MaxS > Movers_>',
+             'SumT > Movers_>',
+             "Movers > AvgT'_>",
+             "BoxT' > MaxT_>",
+             'MaxS > AvgS_>',
+             'SumT > AvgS_>',
+             "BoxT' > SumT_>",
+             "Movers > MaxTR'_>",
+             'MaxS > MaxSR_>',
+             'SumT > MaxSR_>',
+             "BoxT' > BoxT_>",
+             'Movers > MaxS_>',
+             "MaxS > MaxS'_>",
+             "SumT > MaxS'_>",
+             'Movers > SumS_>',
+             "BoxT' > AvgT_>",
+             "MaxS > SumS'_>",
+             "SumT > SumS'_>",
+             'Movers > Movers_>',
+             "BoxT' > MaxTR_>",
+             "MaxS > Movers'_>",
+             "SumT > Movers'_>",
+             'Movers > AvgS_>',
+             "BoxT' > MaxT'_>",
+             "MaxS > AvgS'_>",
+             "SumT > AvgS'_>",
+             'Movers > MaxSR_>',
+             "BoxT' > SumT'_>",
+             "MaxS > MaxSR'_>",
+             "SumT > MaxSR'_>",
+             "Movers > MaxS'_>",
+             "BoxT' > BoxT'_>",
+             'SumS > MaxT_>',
+             'BoxT > MaxT_>',
+             "Movers > SumS'_>",
+             "BoxT' > AvgT'_>",
+             'SumS > SumT_>',
+             'BoxT > SumT_>',
+             "Movers > Movers'_>",
+             "BoxT' > MaxTR'_>",
+             'SumS > BoxT_>',
+             'BoxT > BoxT_>',
+             "BoxT' > MaxS_>",
+             "Movers > AvgS'_>",
+             'SumS > AvgT_>',
+             'BoxT > AvgT_>',
+             "BoxT' > SumS_>",
+             "Movers > MaxSR'_>",
+             'SumS > MaxTR_>',
+             'BoxT > MaxTR_>',
+             "BoxT' > Movers_>",
+             'AvgS > MaxT_>',
+             "SumS > MaxT'_>",
+             "BoxT > MaxT'_>",
+             "BoxT' > AvgS_>",
+             'AvgS > SumT_>',
+             "SumS > SumT'_>",
+             "BoxT > SumT'_>",
+             "BoxT' > MaxSR_>",
+             'AvgS > BoxT_>',
+             "SumS > BoxT'_>",
+             "BoxT > BoxT'_>",
+             "BoxT' > MaxS'_>",
+             'AvgS > AvgT_>',
+             "SumS > AvgT'_>",
+             "BoxT > AvgT'_>",
+             "BoxT' > SumS'_>",
+             'AvgS > MaxTR_>',
+             "SumS > MaxTR'_>",
+             "BoxT > MaxTR'_>",
+             "Movers > BoxT'_>",
+             "AvgS > MaxT'_>",
+             "BoxT' > Movers'_>",
+             'SumS > MaxS_>',
+             'BoxT > MaxS_>',
+             "BoxT' > AvgS'_>",
+             "AvgS > SumT'_>",
+             'SumS > SumS_>',
+             'BoxT > SumS_>',
+             "BoxT' > MaxSR'_>",
+             "AvgS > BoxT'_>",
+             'SumS > Movers_>',
+             'BoxT > Movers_>',
+             "AvgS > AvgT'_>",
+             "AvgT' > MaxT_>",
+             'SumS > AvgS_>',
+             'BoxT > AvgS_>',
+             "AvgS > MaxTR'_>",
+             "AvgT' > SumT_>",
+             'MaxSR > AvgT_>',
+             'SumS > MaxSR_>',
+             'BoxT > MaxSR_>',
+             'AvgS > MaxS_>',
+             "AvgT' > BoxT_>",
+             "SumS > MaxS'_>",
+             "BoxT > MaxS'_>",
+             'AvgS > SumS_>',
+             "AvgT' > AvgT_>",
+             "SumS > SumS'_>",
+             "BoxT > SumS'_>",
+             'AvgS > Movers_>',
+             "AvgT' > MaxTR_>",
+             "SumS > Movers'_>",
+             "BoxT > Movers'_>",
+             'AvgS > AvgS_>',
+             "AvgT' > MaxT'_>",
+             "SumS > AvgS'_>",
+             "BoxT > AvgS'_>",
+             'AvgS > MaxSR_>',
+             "AvgT' > SumT'_>",
+             "SumS > MaxSR'_>",
+             "BoxT > MaxSR'_>",
+             "AvgS > MaxS'_>",
+             "AvgT' > BoxT'_>",
+             'Movers > MaxT_>',
+             "AvgS > SumS'_>",
+             'AvgT > MaxT_>',
+             "AvgT' > AvgT'_>",
+             'Movers > SumT_>',
+             "AvgS > Movers'_>",
+             'AvgT > SumT_>',
+             "AvgT' > MaxTR'_>",
+             'Movers > BoxT_>',
+             "AvgS > AvgS'_>",
+             'AvgT > BoxT_>',
+             "AvgT' > MaxS_>",
+             'Movers > AvgT_>',
+             "AvgS > MaxSR'_>",
+             'AvgT > AvgT_>',
+             "AvgT' > SumS_>",
+             'Movers > MaxTR_>',
+             'MaxSR > MaxT_>',
+             'AvgT > MaxTR_>',
+             "AvgT' > Movers_>",
+             "Movers > MaxT'_>",
+             'MaxSR > SumT_>',
+             "AvgT > MaxT'_>",
+             "AvgT' > AvgS_>",
+             "Movers > SumT'_>",
+             'MaxSR > BoxT_>',
+             "AvgT > SumT'_>",
+             "AvgT' > MaxSR_>",
+             "AvgT' > MaxS'_>"],
+ 'success': [],
+ 'tie': ["MaxT > MaxT'_>",
+         "MaxT' > MaxT_>",
+         "MaxT' > MaxT'_>",
+         "MaxT > BoxT'_>",
+         "MaxT > Movers'_>",
+         'MaxT > MaxT_>',
+         "MaxT' > BoxT'_>",
+         "MaxT' > Movers'_>"]}
+| Metric            | Filters   | scrc-rcsc-prom   | eng-prom   | chi-prom   | kor-prom   | jap-prom   | right-center   |
+|-------------------+-----------+------------------+------------+------------+------------+------------+----------------|
+| AvgS > AvgS       | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| AvgS > AvgS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > AvgT       | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > AvgT'      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > BoxT       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > BoxT'      | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| AvgS > MaxS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > MaxS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > MaxSR      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > MaxSR'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > MaxT       | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| AvgS > MaxT'      | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| AvgS > MaxTR      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > MaxTR'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > Movers     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > Movers'    | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| AvgS > SumS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > SumS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > SumT       | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS > SumT'      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > AvgS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > AvgS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > AvgT      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > AvgT'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > BoxT      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > BoxT'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxSR     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxSR'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxT      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxT'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxTR     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > MaxTR'    | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > Movers    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > Movers'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > SumS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > SumS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > SumT      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgS' > SumT'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| AvgT > AvgS       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > AvgS'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > AvgT       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > AvgT'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > BoxT       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > BoxT'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxS       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxS'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxSR      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxSR'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxT       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxT'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxTR      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > MaxTR'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > Movers     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > Movers'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > SumS       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > SumS'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > SumT       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT > SumT'      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT' > AvgS      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > AvgS'     | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > AvgT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT' > AvgT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > BoxT      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > BoxT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > MaxS      | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > MaxS'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > MaxSR     | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > MaxSR'    | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > MaxT      | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > MaxT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > MaxTR     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT' > MaxTR'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| AvgT' > Movers    | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > Movers'   | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| AvgT' > SumS      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > SumS'     | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > SumT      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| AvgT' > SumT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| BoxT > AvgS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT > AvgS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT > AvgT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| BoxT > AvgT'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| BoxT > BoxT       | >         | Tie              | Yes        | No         | Tie        | Yes        | Tie            |
+| BoxT > BoxT'      | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| BoxT > MaxS       | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| BoxT > MaxS'      | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| BoxT > MaxSR      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT > MaxSR'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT > MaxT       | >         | Tie              | Yes        | No         | Tie        | Yes        | Yes            |
+| BoxT > MaxT'      | >         | Tie              | Yes        | No         | Tie        | Yes        | Yes            |
+| BoxT > MaxTR      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| BoxT > MaxTR'     | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| BoxT > Movers     | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| BoxT > Movers'    | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| BoxT > SumS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT > SumS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT > SumT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| BoxT > SumT'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| BoxT' > AvgS      | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| BoxT' > AvgS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT' > AvgT      | >         | Yes              | Yes        | Yes        | No         | No         | No             |
+| BoxT' > AvgT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | No             |
+| BoxT' > BoxT      | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| BoxT' > BoxT'     | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| BoxT' > MaxS      | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| BoxT' > MaxS'     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| BoxT' > MaxSR     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT' > MaxSR'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT' > MaxT      | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| BoxT' > MaxT'     | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| BoxT' > MaxTR     | >         | Yes              | Yes        | Yes        | No         | No         | No             |
+| BoxT' > MaxTR'    | >         | Yes              | Yes        | Yes        | No         | No         | No             |
+| BoxT' > Movers    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| BoxT' > Movers'   | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| BoxT' > SumS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT' > SumS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| BoxT' > SumT      | >         | Yes              | Yes        | No         | No         | Yes        | No             |
+| BoxT' > SumT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | No             |
+| MaxS > AvgS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS > AvgS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS > AvgT       | >         | Yes              | Yes        | No         | No         | No         | No             |
+| MaxS > AvgT'      | >         | Yes              | Yes        | No         | No         | Tie        | No             |
+| MaxS > BoxT       | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| MaxS > BoxT'      | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > MaxS       | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > MaxS'      | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > MaxSR      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS > MaxSR'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS > MaxT       | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > MaxT'      | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > MaxTR      | >         | Yes              | Yes        | No         | No         | No         | No             |
+| MaxS > MaxTR'     | >         | Yes              | Yes        | No         | No         | No         | No             |
+| MaxS > Movers     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > Movers'    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS > SumS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS > SumS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS > SumT       | >         | Yes              | Yes        | No         | No         | Yes        | No             |
+| MaxS > SumT'      | >         | Yes              | Yes        | No         | No         | Tie        | No             |
+| MaxS' > AvgS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS' > AvgS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS' > AvgT      | >         | Yes              | Yes        | No         | No         | No         | No             |
+| MaxS' > AvgT'     | >         | Yes              | Yes        | No         | No         | Tie        | No             |
+| MaxS' > BoxT      | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| MaxS' > BoxT'     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > MaxS      | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > MaxS'     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > MaxSR     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS' > MaxSR'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS' > MaxT      | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > MaxT'     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > MaxTR     | >         | Yes              | Yes        | No         | No         | No         | No             |
+| MaxS' > MaxTR'    | >         | Yes              | Yes        | No         | No         | No         | No             |
+| MaxS' > Movers    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > Movers'   | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| MaxS' > SumS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS' > SumS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxS' > SumT      | >         | Yes              | Yes        | No         | No         | Yes        | No             |
+| MaxS' > SumT'     | >         | Yes              | Yes        | No         | No         | Tie        | No             |
+| MaxSR > AvgS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > AvgS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > AvgT      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > AvgT'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > BoxT      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > BoxT'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxSR     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxSR'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxT      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxT'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxTR     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > MaxTR'    | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > Movers    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > Movers'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > SumS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > SumS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > SumT      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR > SumT'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > AvgS     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > AvgS'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > AvgT     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > AvgT'    | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > BoxT     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > BoxT'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxS     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxS'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxSR    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxSR'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxT     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxT'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxTR    | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > MaxTR'   | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > Movers   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > Movers'  | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > SumS     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > SumS'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > SumT     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxSR' > SumT'    | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| MaxT > AvgS       | >         | Tie              | Tie        | No         | Yes        | Yes        | Yes            |
+| MaxT > AvgS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT > AvgT       | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxT > AvgT'      | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| MaxT > BoxT       | >         | Tie              | Yes        | No         | Tie        | Yes        | Yes            |
+| MaxT > BoxT'      | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT > MaxS       | >         | Tie              | Yes        | No         | Tie        | Tie        | Yes            |
+| MaxT > MaxS'      | >         | Tie              | Yes        | No         | Tie        | Tie        | Yes            |
+| MaxT > MaxSR      | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT > MaxSR'     | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT > MaxT       | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT > MaxT'      | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT > MaxTR      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxT > MaxTR'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxT > Movers     | >         | Tie              | Yes        | No         | Tie        | Tie        | Yes            |
+| MaxT > Movers'    | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT > SumS       | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT > SumS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT > SumT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| MaxT > SumT'      | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| MaxT' > AvgS      | >         | Tie              | Tie        | No         | Yes        | Yes        | Yes            |
+| MaxT' > AvgS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT' > AvgT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxT' > AvgT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| MaxT' > BoxT      | >         | Tie              | Yes        | No         | Tie        | Yes        | Yes            |
+| MaxT' > BoxT'     | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT' > MaxS      | >         | Tie              | Yes        | No         | Tie        | Tie        | Yes            |
+| MaxT' > MaxS'     | >         | Tie              | Yes        | No         | Tie        | Tie        | Yes            |
+| MaxT' > MaxSR     | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT' > MaxSR'    | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT' > MaxT      | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT' > MaxT'     | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT' > MaxTR     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxT' > MaxTR'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxT' > Movers    | >         | Tie              | Yes        | No         | Tie        | Tie        | Yes            |
+| MaxT' > Movers'   | >         | Tie              | Tie        | Tie        | Tie        | Tie        | Yes            |
+| MaxT' > SumS      | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT' > SumS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | Yes            |
+| MaxT' > SumT      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| MaxT' > SumT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| MaxTR > AvgS      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > AvgS'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > AvgT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > AvgT'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > BoxT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > BoxT'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxS      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxS'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxSR     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxSR'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxT'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxTR     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > MaxTR'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > Movers    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > Movers'   | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > SumS      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > SumS'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > SumT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR > SumT'     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > AvgS     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > AvgS'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > AvgT     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > AvgT'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > BoxT     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > BoxT'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxS     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxS'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxSR    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxSR'   | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxT     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxT'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxTR    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > MaxTR'   | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > Movers   | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > Movers'  | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > SumS     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > SumS'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > SumT     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| MaxTR' > SumT'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| Movers > AvgS     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers > AvgS'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers > AvgT     | >         | Yes              | Yes        | No         | No         | No         | No             |
+| Movers > AvgT'    | >         | Yes              | Yes        | No         | No         | Tie        | No             |
+| Movers > BoxT     | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| Movers > BoxT'    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > MaxS     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > MaxS'    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > MaxSR    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers > MaxSR'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers > MaxT     | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > MaxT'    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > MaxTR    | >         | Yes              | Yes        | No         | No         | No         | No             |
+| Movers > MaxTR'   | >         | Yes              | Yes        | No         | No         | No         | No             |
+| Movers > Movers   | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > Movers'  | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers > SumS     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers > SumS'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers > SumT     | >         | Yes              | Yes        | No         | No         | Yes        | No             |
+| Movers > SumT'    | >         | Yes              | Yes        | No         | No         | Tie        | No             |
+| Movers' > AvgS    | >         | Tie              | Tie        | No         | Yes        | Yes        | No             |
+| Movers' > AvgS'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers' > AvgT    | >         | Yes              | Yes        | Yes        | No         | No         | No             |
+| Movers' > AvgT'   | >         | Yes              | Yes        | Yes        | No         | Tie        | No             |
+| Movers' > BoxT    | >         | Tie              | Yes        | No         | Tie        | Yes        | No             |
+| Movers' > BoxT'   | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| Movers' > MaxS    | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers' > MaxS'   | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers' > MaxSR   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers' > MaxSR'  | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers' > MaxT    | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| Movers' > MaxT'   | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| Movers' > MaxTR   | >         | Yes              | Yes        | Yes        | No         | No         | No             |
+| Movers' > MaxTR'  | >         | Yes              | Yes        | Yes        | No         | No         | No             |
+| Movers' > Movers  | >         | Tie              | Yes        | No         | Tie        | Tie        | No             |
+| Movers' > Movers' | >         | Tie              | Tie        | Tie        | Tie        | Tie        | No             |
+| Movers' > SumS    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers' > SumS'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| Movers' > SumT    | >         | Yes              | Yes        | No         | No         | Yes        | No             |
+| Movers' > SumT'   | >         | Yes              | Yes        | Yes        | No         | Tie        | No             |
+| SumS > AvgS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > AvgS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > AvgT       | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > AvgT'      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > BoxT       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > BoxT'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxSR      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxSR'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxT       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxT'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxTR      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > MaxTR'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > Movers     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > Movers'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > SumS       | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > SumS'      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > SumT       | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS > SumT'      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > AvgS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > AvgS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > AvgT      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > AvgT'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > BoxT      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > BoxT'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxSR     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxSR'    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxT      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxT'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxTR     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > MaxTR'    | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > Movers    | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > Movers'   | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > SumS      | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > SumS'     | >         | Tie              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > SumT      | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumS' > SumT'     | >         | Yes              | Yes        | No         | Yes        | Yes        | No             |
+| SumT > AvgS       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > AvgS'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > AvgT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > AvgT'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > BoxT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > BoxT'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxS       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxS'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxSR      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxSR'     | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxT'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxTR      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > MaxTR'     | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > Movers     | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > Movers'    | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > SumS       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > SumS'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > SumT       | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT > SumT'      | >         | Yes              | Yes        | No         | No         | Yes        | Yes            |
+| SumT' > AvgS      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > AvgS'     | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > AvgT      | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| SumT' > AvgT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > BoxT      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > BoxT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > MaxS      | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > MaxS'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > MaxSR     | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > MaxSR'    | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > MaxT      | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > MaxT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > MaxTR     | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| SumT' > MaxTR'    | >         | Yes              | Yes        | Yes        | No         | No         | Yes            |
+| SumT' > Movers    | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > Movers'   | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |
+| SumT' > SumS      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > SumS'     | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > SumT      | >         | Yes              | Yes        | Yes        | No         | Yes        | Yes            |
+| SumT' > SumT'     | >         | Yes              | Yes        | Yes        | No         | Tie        | Yes            |

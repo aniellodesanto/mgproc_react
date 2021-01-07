@@ -1,0 +1,7 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+ita-swh-owh-prev-word ;  ; wh_amb_subj_prev ; wh_amb_obj_prev ; 
+ita-swh-owh-postv-word ;  ; wh_amb_subj_postv ; wh_amb_obj_postv ; 
+

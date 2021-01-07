@@ -1,0 +1,441 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+\begin{document}
+
+
+%%KAYNE- STYLE ANALYSIS
+%high attachment
+\begin{figure}
+\begin{forest}
+baseline,
+for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[VP
+					[CP,name=RelH
+					[C'
+						[that]
+						[TP,name=ETP
+							[T'
+								[T]
+								[\emph{v}P
+									[DP,name=Relsub
+										[daughter]
+										[EzP
+											[-e]
+											[actor]
+										]
+									]
+									[\emph{v}',name=Ev'
+										[VP
+											[PP
+												[on]
+												[the balcony]
+											]
+										[was,name=EV]]]]]]]][saw,name=MV]]]]]]]]]]
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+%\draw[move = {EPP},non-final] (Relsub) to[out=west,in=south west] (ETP);
+\draw[move = {RelM}] (ETP) to[out=south west,in=south west] (RelH);
+\draw[move = {Vtov}] (EV) to[out=east,in=south east] (Ev');
+%not for the parser
+\draw[move = {EPP},] (Relsub) to[out=west,in=south west] (ETP);
+\end{forest}
+\caption{KAYNE- STYLE ANALYSIS (without ra movement)
+high  attachment}
+\end{figure}
+%
+%%low attachment
+\begin{figure}
+\begin{forest}
+baseline,
+for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[
+					VP
+					[DP
+					[daughter]
+						[EzP
+							[-e]
+							[CP,name=RelH
+								[C'
+									[that]
+									[TP,name=ETP
+										[T'
+										[T]
+										[\emph{v}P
+										[actor,name=Relsub]
+											[\emph{v}',name=Ev'
+												[VP
+													[PP
+														[on]
+														[the balcony]
+													]
+												[was,name=EV
+												]]]]]]]]]][saw,name=MV]]]]]]]]
+%
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+%\draw[move = {EPP},non-final] (Relsub) to[out=west,in=south west] (ETP);
+\draw[move = {RelM}] (ETP) to[out=south west,in=south west] (RelH);
+\draw[move = {VtoV}] (EV) to[out=east,in=south east] (Ev');
+%not for the parser
+\draw[move = {EPP}] (Relsub) to[out=west,in=south west] (ETP);
+\end{forest}
+\caption{KAYNE- STYLE ANALYSIS (without ra movement)
+low  attachment}
+\end{figure}
+
+%KAYNE- STYLE ANALYSIS (with ra movement)
+%High attachment
+%
+\begin{figure}
+\begin{forest}
+baseline,
+for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[VP
+				[CP,name=RelH
+					[C'
+						[that]
+						[TP,name=ETP
+							[T'
+								[T]
+								[\emph{v}P
+									[DP,name=Relsub
+										[D'
+										[-i]
+										[D'
+										[DP, name=DP1
+										[daughter]
+										[EzP
+											[-e]
+											[actor]
+										]
+										]
+										[-ra]
+									]
+									]
+									]
+									[\emph{v}',name=Ev'
+										[VP
+											[PP
+												[on]
+												[the balcony]
+											]
+										[was,name=EV]]]]]]]]
+										[saw,name=MV]]
+										]]]]]]]]
+\draw[move={ra}] (DP1) to[out=west,in=south west] (Relsub);
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+%\draw[move = {EPP},non-final] (Relsub) to[out=west,in=south west] (ETP);
+\draw[move = {RelM}] (ETP) to[out=south west,in=south west] (RelH);
+\draw[move = {Vtov}] (EV) to[out=east,in=south east] (Ev');
+%not for the parser
+\draw[move = {EPP},] (Relsub) to[out=west,in=south west] (ETP);
+\end{forest}
+\caption{KAYNE- STYLE ANALYSIS (with -ra)
+High attachment}
+\end{figure}
+
+%low attachment
+\begin{figure}
+\begin{forest}
+baseline,
+for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[
+					VP
+					[DP
+					[daughter]
+						[EzP
+							[-e]
+							[CP,name=RelH
+								[C'
+									[that]
+									[TP,name=ETP
+										[T'
+										[T]
+										[\emph{v}P
+										[DP,name=Relsub
+										[D'
+										[-i]
+										[D'																			[actor,name=actor]
+										[-ra]
+										]
+										]
+										]
+											[\emph{v}',name=Ev'
+												[VP
+													[PP
+														[on]
+														[the balcony]
+													]
+												[was,name=EV
+												]]]]]]]]]][saw,name=MV]]]]]]]]
+%
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+%\draw[move = {EPP},non-final] (Relsub) to[out=west,in=south west] (ETP);
+\draw[move = {ra}] (actor) to[out=south west,in=south west] (Relsub);
+\draw[move = {RelM}] (ETP) to[out=south west,in=south west] (RelH);
+\draw[move = {VtoV}] (EV) to[out=east,in=south east] (Ev');
+%not for the parser
+\draw[move = {EPP}] (Relsub) to[out=west,in=south west] (ETP);
+\end{forest}
+\caption{KAYNE- STYLE ANALYSIS (with ra movement)
+low attachment}
+\end{figure}
+
+
+
+%%KARIMI- STYLE ANALYSIS (BASE GENERATION, ra at the end)
+%high attachment
+
+%\begin{figure}
+%\begin{forest}
+%baseline,
+%for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+%[TP,name=MTP
+%	[T'
+%		[T]
+%		[\emph{v}P
+%			[Ali,name=Msub]
+%			[\emph{v}',name=Mv'
+%				[VP
+%					[DP,name=RelH
+%					[DP$_i$,name=Relsub
+%					[daughter]
+%										[EzP
+%											[-e]
+%											[actor]
+%										]
+%					]
+%					[D'
+%					[-i]
+%					[CP,
+%					[OP$_i$]
+%					[C'
+%						[that]
+%						[TP,name=ETP
+%							[T'
+%								[T]
+%								[\emph{v}P
+%									[pro$_i$,name=Prosub
+%									]
+%									[\emph{v}',name=Ev'
+%										[VP
+%											[PP
+%												[on]
+%												[the balcony]
+%											]
+%										[was,name=EV]]]]]]]
+%				]]
+%				][saw,name=MV]]]]]]]]]]
+%\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+%\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+%\draw[move = {EPP}] (Prosub) to[out=west,in=south west] (ETP);
+%\draw[move = {Vtov}] (EV) to[out=east,in=south east] (Ev');
+%\end{forest}
+%\caption{Karimi- STYLE ANALYSIS (with ra movement at the end)
+%low  attachment}
+%\end{figure}
+%
+%%low attachment
+%\begin{forest}
+%baseline,
+%for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+%[TP,name=MTP
+%	[T'
+%		[T]
+%		[\emph{v}P
+%			[Ali,name=Msub]
+%			[\emph{v}',name=Mv'
+%				[
+%					VP
+%					[DP
+%					[daughter]
+%						[EzP
+%							[-e]
+%							[DP,name=RelH
+%							[actor,name=Relsub]
+%							[D'
+%								[-i]
+%								[CP
+%								[OP$_i$]
+%								[C'
+%									[that]
+%									[TP,name=ETP
+%										[T'
+%										[T]
+%										[\emph{v}P
+%										[pro$_i$,name=Prosub]
+%											[\emph{v}',name=Ev'
+%												[VP
+%													[PP
+%														[on]
+%														[the balcony]
+%													]
+%												[was,name=EV
+%												]]]]]]]]
+%												]]
+%												]][saw,name=MV]]]]]]]]
+%%
+%\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+%\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+%\draw[move = {EPP}] (Prosub) to[out=west,in=south west] (ETP);
+%\draw[move = {VtoV}] (EV) to[out=east,in=south east] (Ev');
+%\end{forest}
+
+
+
+%%KARIMI- STYLE ANALYSIS (BASE GENERATION, -ra layer)
+%high attachment
+%
+\begin{figure}
+\begin{forest}
+baseline,
+for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[VP
+				[K$_S$P,name=KP
+					[K'$_S$
+					[ra]
+					[DP,name=RelH
+					[DP$_i$,name=Relsub
+					[daughter]
+										[EzP
+											[-e]
+											[actor]
+										]
+					]
+					[D'
+					[-i]
+					[CP,
+					[OP$_i$]
+					[C'
+						[that]
+						[TP,name=ETP
+							[T'
+								[T]
+								[\emph{v}P
+									[pro$_i$,name=Prosub
+									]
+									[\emph{v}',name=Ev'
+										[VP
+											[PP
+												[on]
+												[the balcony]
+											]
+										[was,name=EV]]]]]]]
+				]]]]
+				][saw,name=MV]]]]]]]]]]
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+\draw[move = {raMOV}] (Relsub) to[out=west,in=south west] (KP);
+\draw[move = {EPP}] (Prosub) to[out=west,in=south west] (ETP);
+\draw[move = {Vtov}] (EV) to[out=east,in=south east] (Ev');
+\end{forest}
+\caption{KARIMI- STYLE ANALYSIS (BASE GENERATION, -ra layer
+high  attachment}
+\end{figure}
+
+%%low attachment
+\begin{figure}
+\begin{forest}
+baseline,
+for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+[TP,name=MTP
+	[T'
+		[T]
+		[\emph{v}P
+			[Ali,name=Msub]
+			[\emph{v}',name=Mv'
+				[
+					VP
+					[DP
+					[daughter]
+						[EzP
+							[-e]
+							[K$_S$P,name=KP
+							[K'$_S$
+							[ra]
+							[DP,name=RelH
+							[actor,name=Relsub]
+							[D'
+								[-i]
+								[CP
+								[OP$_i$]
+								[C'
+									[that]
+									[TP,name=ETP
+										[T'
+										[T]
+										[\emph{v}P
+										[pro$_i$,name=Prosub]
+											[\emph{v}',name=Ev'
+												[VP
+													[PP
+														[on]
+														[the balcony]
+													]
+												[was,name=EV
+												]]]]]]]]
+								]
+								]
+								]
+								]
+												]][saw,name=MV]]]]]]]
+%
+\draw[move = {EPP}] (Msub) to[out=west,in=south west] (MTP);
+\draw[move = {Vtov}] (MV) to[out=south east,in=south east] (Mv');
+\draw[move = {raMOV}] (Relsub) to[out=west,in=south west] (KP);
+\draw[move = {EPP}] (Prosub) to[out=west,in=south west] (ETP);
+\draw[move = {VtoV}] (EV) to[out=east,in=south east] (Ev');
+\end{forest}
+\caption{KARIMI- STYLE ANALYSIS (BASE GENERATION, -ra layer
+low  attachment}
+\end{figure}
+
+
+\end{document}

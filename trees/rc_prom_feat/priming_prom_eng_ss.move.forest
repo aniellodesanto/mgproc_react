@@ -1,0 +1,5 @@
+\draw[move = {nom}] (coord) .. controls +(130:2em) and +(220:4em) .. (TPmatrix);
+\draw[move = {nom}] (RC1source) .. controls +(110:4em) and +(210:4em) .. (TP1);
+\draw[move = {nom}] (RC2source) .. controls +(110:4em) and +(210:4em) .. (TP2);
+\draw[move= {rel}] (RC1source) .. controls +(140:10em) and +(220:4em) .. (RC1target);
+\draw[move= {rel}] (RC2source) .. controls +(140:10em) and +(220:4em) .. (RC2target);

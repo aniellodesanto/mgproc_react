@@ -1,0 +1,25 @@
+python3 -i __init__.py
+#
+#
+mytree = tree_from_file('trees/attachment/noun')
+mytree.show_leaves()
+mytree = tree_from_file('trees/attachment/noun')
+ioprint(mytree, filename='trees/attachment/noun')
+texprint(mytree, filename='noun_annotated', tree_directory='./trees/attachment')
+
+
+mytree = tree_from_file('trees/attachment/verb')
+mytree.show_leaves()
+mytree = tree_from_file('trees/attachment/verb')
+ioprint(mytree, filename='trees/attachment/verb')
+texprint(mytree, filename='verb_annotated', tree_directory='./trees/attachment')
+
+
+
+#Comparison
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+comp = comparisons_from_file('./comparisons/attachment/attachment', directory='./trees/attachment', metrics=my_metrics)
+
+# Check
+comp.show()
+comp.table()

@@ -1,0 +1,67 @@
+\documentclass{article}
+
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+% indexed node labels in trees;
+% these macros are only needed if you want to use the output of the .fprint method
+\newcommand{\Lab}[3]{\tsp{#2}#1\tsb{#3}} % for normal nodes
+\newcommand{\BLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed leaves
+\newcommand{\IBLab}[3]{\tsp{#2}#1{\setlength{\fboxsep}{.25\fboxsep}\boxed{\tsb{#3}}}} % for boxed interior nodes
+
+\begin{document}
+
+The SO tree is shown below.
+%
+\begin{center}
+\input{./img_ita/rc_ITA_OS.io.mgproc.forest}
+\end{center}
+%
+\newpage
+The OO tree is shown below.
+\begin{center}
+    \input{./img_ita/rc_ITA_OO.io.mgproc.forest}
+\end{center}
+%
+\newpage
+The OOp tree is shown below.
+%
+\begin{center}
+\input{./img_ita/rc_ITA_OOp.io.mgproc.forest}
+\end{center}
+
+\newpage
+
+Here I start with the RC in subject position. The SS tree is shown below.
+%
+\begin{center}
+\input{./img_ita/rc_ITA_SS.io.mgproc.forest}
+\end{center}
+%
+\newpage
+The SO tree is shown below.
+\begin{center}
+    \input{./img_ita/rc_ITA_SO.io.mgproc.forest}
+\end{center}
+%
+\newpage
+The SOp tree is shown below.
+%
+\begin{center}
+\input{./img_ita/rc_ITA_SOp.io.mgproc.forest}
+\end{center}
+
+\end{document}

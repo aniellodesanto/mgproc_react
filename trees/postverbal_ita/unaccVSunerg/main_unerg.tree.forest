@@ -1,0 +1,28 @@
+[CP, name=CP
+    [C, name=C]
+    [TP, name=TP
+        [pro, name=pro, empty]
+        [T$'$, name=T1
+        [PerfP,
+            [ha, name=ha]
+            [TopP, name=TopP
+                [Top$'$, name=Top
+                    [Top, name=t22211, empty]
+                    [FocP, name=FocP
+                        [Fop$'$, name=Fop
+                            [Foc, name=t2221211, empty]
+                            [$v$P, name=vP
+                                [Gio, name=DPs]
+                                [$v'$, name=t22212122
+                                    [$v$, name=t222121221, empty]
+                                    [corso, name=t222121222]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+        ]
+    ]
+]

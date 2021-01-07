@@ -1,0 +1,51 @@
+
+#####RESULTS with long/short extraction
+
+| Metric   | Filters   | noILong-vs-ILong   | noIShort-vs-IShort   | noIShort-vs-noILong   | IShort-vs-ILong   |
+|----------+-----------+--------------------+----------------------+-----------------------+-------------------|
+| AvgS     |           | No                 | Tie                  | Yes                   | Yes               |
+| AvgS'    |           | Yes                | Tie                  | Yes                   | Yes               |
+| AvgT     |           | Yes                | Yes                  | Yes                   | Yes               |
+| AvgT'    |           | Yes                | Yes                  | Yes                   | Yes               |
+| BoxT     |           | Yes                | Tie                  | Yes                   | Yes               |
+| BoxT'    |           | Yes                | Yes                  | No                    | No                |
+| MaxS     |           | Yes                | Tie                  | Yes                   | Yes               |
+| MaxS'    |           | Yes                | Tie                  | Yes                   | Yes               |
+| MaxSR    |           | Yes                | Tie                  | Yes                   | Yes               |
+| MaxSR'   |           | Yes                | Tie                  | Yes                   | Yes               |
+| MaxT     |           | Yes                | Yes                  | Yes                   | Yes               |
+| MaxT'    |           | Yes                | Yes                  | Yes                   | Yes               |
+| MaxTR    |           | Yes                | Yes                  | Yes                   | Yes               |
+| MaxTR'   |           | Yes                | Yes                  | Yes                   | Yes               |
+| Movers   |           | Yes                | Tie                  | Tie                   | Yes               |
+| Movers'  |           | Tie                | Tie                  | Tie                   | Tie               |
+| SumS     |           | Yes                | Tie                  | Yes                   | Yes               |
+| SumS'    |           | Yes                | Tie                  | Yes                   | Yes               |
+| SumT     |           | Yes                | Yes                  | Yes                   | Yes               |
+| SumT'    |           | Yes                | Yes                  | Yes                   | Yes               |
+
+
+#####RESULTS with subject/object extraction
+
+| Metric   | Filters   | objNOI-vs-objI   | subjNOI-vs-subjI   | objNOI-vs-subjNOI   | objI-vs-subjI   | objNOI-vs-subjI   |
+|----------+-----------+------------------+--------------------+---------------------+-----------------+-------------------|
+| AvgS     |           | Yes              | No                 | Yes                 | No              | Yes               |
+| AvgS'    |           | Yes              | Yes                | No                  | No              | Yes               |
+| AvgT     |           | Yes              | Yes                | No                  | No              | Yes               |
+| AvgT'    |           | Yes              | Yes                | No                  | No              | No                |
+| BoxT     |           | Yes              | Yes                | No                  | No              | Yes               |
+| BoxT'    |           | Yes              | Yes                | Tie                 | Tie             | Yes               |
+| MaxS     |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxS'    |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxSR    |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxSR'   |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxT     |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxT'    |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxTR    |           | Yes              | Yes                | No                  | No              | Yes               |
+| MaxTR'   |           | Yes              | Yes                | No                  | No              | Yes               |
+| Movers   |           | Tie              | Yes                | No                  | Tie             | Tie               |
+| Movers'  |           | Tie              | Tie                | Tie                 | Tie             | Tie               |
+| SumS     |           | Yes              | Yes                | No                  | No              | Yes               |
+| SumS'    |           | Yes              | Yes                | No                  | No              | Yes               |
+| SumT     |           | Yes              | Yes                | No                  | No              | Yes               |
+| SumT'    |           | Yes              | Yes                | No                  | No              | Yes               |

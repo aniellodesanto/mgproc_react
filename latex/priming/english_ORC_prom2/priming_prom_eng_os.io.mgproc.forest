@@ -1,0 +1,117 @@
+\begin{forest}
+%
+%%%%%%%%
+% Tree %
+%%%%%%%%
+%
+[ConjP
+[CP
+    [C, empty]
+    [TP, name=TPmatrix1
+        [T$'$
+            [T, empty]
+            [$v$P
+               [DP, name=DP1
+                    [the]
+                    [NP, name=RC1target
+                        [N$'$
+                            [who]
+                            [TP, name=TP1
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=DP1subj
+                                            [the]
+                                            [senator]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [attacked]
+                                                [DP, name=RC1source
+                                                    [D, empty]
+                                                    [reporter]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                [$v'$
+                    [$v$, empty]
+                    [VP
+                        [admitted]
+                        [DP
+                            [the]
+                            [error]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+[Conj$'$
+		[and]
+		[CP
+    [C, empty]
+    [TP, name=TPmatrix2
+        [T$'$
+            [T, empty]
+            [$v$P
+                [DP, name=DP2
+                    [the]
+                    [NP, name=RC2target
+                        [N$'$
+                            [who]
+                            [TP, name=TP2
+                                [T$'$
+                                    [T, empty]
+                                    [$v$P
+                                        [DP, name=DP2subj
+                                            [D,empty]
+                                            [actor]
+                                        ]
+                                        [$v'$
+                                            [$v$, empty]
+                                            [VP
+                                                [attacked]
+                                                [DP
+                                                    [the]
+                                                    [photographer]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]%
+                   [$v'$
+                    [$v$, empty]
+                    [VP
+                        [admitted]
+                        [DP
+                            [the]
+                            [error]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+]
+]
+%%
+\draw[move = {nom}] (DP1) .. controls +(130:2em) and +(220:4em) .. (TPmatrix1);
+\draw[move = {nom}] (DP2) .. controls +(130:2em) and +(220:4em) .. (TPmatrix2);
+\draw[move = {nom}] (DP1subj) .. controls +(110:4em) and +(210:4em) .. (TP1);
+\draw[move = {nom}] (DP2subj) .. controls +(110:4em) and +(210:4em) .. (TP2);
+\draw[move= {rel}] (RC1source) .. controls +(140:10em) and +(220:4em) .. (RC1target);
+\draw[move= {rel}] (DP2subj) .. controls +(140:10em) and +(220:4em) .. (RC2target);
+\end{forest}

@@ -1,0 +1,3 @@
+\draw[move = {hatoT1}] (ha)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {Top}] (DPs)      .. controls +(120:6em) and +(220:4em) .. (TopP);
+\draw[move = {Foc}] (vP)      .. controls +(120:6em) and +(220:4em) .. (FocP);

@@ -1,0 +1,5 @@
+\draw[move = {seetoT1h}] (see)      .. controls +(120:6em) and +(220:4em) .. (T1h);
+\draw[move = {protoTP}] (proh)      .. controls +(120:6em) and +(220:4em) .. (TPh);
+\draw[move = {chasetoT1}] (chase)      .. controls +(120:6em) and +(220:4em) .. (T1);
+\draw[move = {horsetoTP}] (horse)      .. controls +(120:6em) and +(220:4em) .. (TP);
+\draw[move = {horsetoCP}] (horse)      .. controls +(120:6em) and +(220:4em) .. (CP);
